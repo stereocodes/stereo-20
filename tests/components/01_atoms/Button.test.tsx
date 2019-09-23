@@ -1,4 +1,4 @@
-import Button from '../../../src/components/01_atoms/Button';
+import Button from '../../../src/components/01_atoms/button';
 import React from 'react';
 import { mount } from 'enzyme';
 import { expect } from 'chai';
