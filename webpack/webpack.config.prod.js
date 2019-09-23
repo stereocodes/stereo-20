@@ -2,11 +2,15 @@ module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
   output: {
-    filename: "bundle.js",
-    path: __dirname + "../dist"
+    filename: 'bundle.[hash].js',
+    publicPath: '/',
+    path: Path.resolve(__dirname, '../dist')
   },
-  // Enable sourcemaps for debugging webpack's output.
-  devtool: "source-map",
+  optimization: {
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    splitChunks: false
+  },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"]

@@ -1,33 +1,8 @@
 {
-  "name": "tch001",
+  "name": "stereo20",
   "version": "1.0.0",
-  "description": "react, electron, typescript",
-  "main": "./src/main.js",
+  "description": "react, typescript",
   "typings": "./types",
-  "build": {
-    "appId": "com.twitch.app",
-    "productName": "Twitch Kiosk",
-    "files": [
-      "dist/",
-      "index.html",
-      "src/main.js",
-      "package.json",
-      "icon.png",
-      "src/"
-    ],
-    "directories": {
-      "buildResources": "./",
-      "output": "./release",
-      "app": "./"
-    },
-    "extends": null,
-    "win": {
-      "target": [
-        "nsis",
-        "msi"
-      ]
-    }
-  },
   "babel": {
     "presets": [
       "react",
@@ -35,12 +10,8 @@
     ]
   },
   "scripts": {
-    "build": "yarn run build:electron-win && yarn run build:electron-mac",
-    "build:react": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "build:electron-mac": "electron-builder",
-    "build:electron-win": "electron-builder build --win --x64",
+    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
     "start:react": "webpack --config webpack/webpack.config.dev.js --watch",
-    "start:electron": "export NODE_ENV='development' && electron .",
     "start:docz": "yarn docz dev",
     "test": "jest",
     "test:watch": "jest --watch --verbose -e --coverage"

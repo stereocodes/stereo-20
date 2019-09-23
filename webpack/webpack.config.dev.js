@@ -2,21 +2,22 @@ const Path = require('path');
 const Webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
+  entry: Path.resolve(__dirname, '../src/index.tsx'),
   output: {
-    filename: "bundle.js",
-    path: Path.resolve(__dirname, "../dist")
+    filename: 'bundle.[hash].js',
+    publicPath: '/',
+    path: Path.resolve(__dirname, '../dist')
   },
-  plugins: [
-    new Webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('development')
-      }
-    })
-  ], 
+  optimization: {
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    splitChunks: false
+  },
   module: {
     rules: [
       {
@@ -25,4 +26,16 @@ module.exports = merge(common, {
       }
     ]
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: Path.resolve(__dirname, '../public/index.html')
+    }),
+    new Webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('development')
+      }
+    })
+  ]
 })
