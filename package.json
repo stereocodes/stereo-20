@@ -1,0 +1,121 @@
+{
+  "name": "tch001",
+  "version": "1.0.0",
+  "description": "react, electron, typescript",
+  "main": "./src/main.js",
+  "typings": "./types",
+  "build": {
+    "appId": "com.twitch.app",
+    "productName": "Twitch Kiosk",
+    "files": [
+      "dist/",
+      "index.html",
+      "src/main.js",
+      "package.json",
+      "icon.png",
+      "src/"
+    ],
+    "directories": {
+      "buildResources": "./",
+      "output": "./release",
+      "app": "./"
+    },
+    "extends": null,
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "build": "yarn run build:electron-win && yarn run build:electron-mac",
+    "build:react": "webpack --config webpack/webpack.config.prod.js  --colors",
+    "build:electron-mac": "electron-builder",
+    "build:electron-win": "electron-builder build --win --x64",
+    "start:react": "webpack --config webpack/webpack.config.dev.js --watch",
+    "start:electron": "export NODE_ENV='development' && electron .",
+    "start:docz": "yarn docz dev",
+    "test": "jest",
+    "test:watch": "jest --watch --verbose -e --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebrigade/TCH001.git"
+  },
+  "keywords": [
+    "react",
+    "electron",
+    "typescript"
+  ],
+  "author": "Parker Hutchinson @ The Brigade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebrigade/TCH001/issues"
+  },
+  "homepage": "https://github.com/thebrigade/TCH001#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@types/jest": "^24.0.6",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "@types/styled-components": "^4.1.10",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.5.0",
+    "electron-devtools-installer": "^2.2.4",
+    "file-loader": "^4.2.0",
+    "jest": "^24.5.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.3.3",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/chai": "^4.1.7",
+    "@types/enzyme": "^3.1.18",
+    "@types/enzyme-adapter-react-16": "^1.0.4",
+    "@types/sinon": "^7.0.6",
+    "animejs": "^3.0.1",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "css-loader": "^3.2.0",
+    "docz": "^1.3.2",
+    "docz-theme-default": "^1.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "esm": "^3.2.20",
+    "jest-haste-map": "^24.0.0",
+    "jest-resolve": "^24.1.0",
+    "jest-svg-transformer": "^1.0.0",
+    "next-transpile-modules": "^2.2.0",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.x.x",
+    "react-combine-contexts": "^0.1.1",
+    "react-html-parser": "^2.0.2",
+    "react-id-swiper": "^2.1.1",
+    "react-idle-timer": "^4.2.3",
+    "react-player": "^1.9.3",
+    "react-swipe": "^6.0.4",
+    "sass-loader": "^8.0.0",
+    "sinon": "^7.2.4",
+    "style-loader": "^1.0.0",
+    "styled-components": "^4.1.3",
+    "svg-inline-loader": "^0.8.0",
+    "svg-react-loader": "^0.4.6",
+    "swipe-js-iso": "^2.1.5",
+    "uuid": "^3.3.2"
+  }
+}
