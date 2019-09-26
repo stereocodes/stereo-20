@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>box-3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-762.000000, -2989.000000)" stroke="#FFB73E">
+            <g id="Group" transform="translate(0.000000, 2015.000000)">
+                <g id="Group-5" transform="translate(532.000000, 228.000000)">
+                    <g id="box-3" transform="translate(331.000000, 847.000000) rotate(-180.000000) translate(-331.000000, -847.000000) translate(231.000000, 747.000000)">
+                        <rect id="Rectangle" stroke-width="2" x="0" y="1.13686838e-13" width="200" height="200"></rect>
+                        <rect id="Rectangle" fill="#0E0E0E" x="0" y="60" width="20" height="40"></rect>
+                        <circle id="Oval" cx="80" cy="80" r="40"></circle>
+                        <rect id="Rectangle" x="0" y="100" width="60" height="100"></rect>
+                        <path d="M70,90 C81.045695,90 90,98.954305 90,110 L90,110 L50,110 L50.0029071,109.655511 C50.186775,98.7687286 59.0693643,90 70,90 Z" id="Combined-Shape" transform="translate(70.000000, 100.000000) rotate(-90.000000) translate(-70.000000, -100.000000) "></path>
+                        <path d="M90,90 C101.045695,90 110,98.954305 110,110 L110,110 L70,110 L70.0029071,109.655511 C70.186775,98.7687286 79.0693643,90 90,90 Z" id="Combined-Shape" fill="#0E0E0E" transform="translate(90.000000, 100.000000) rotate(-270.000000) translate(-90.000000, -100.000000) "></path>
+                        <path d="M80,80 C91.045695,80 100,88.954305 100,100 L100,100 L60,100 L60.0029071,99.6555106 C60.186775,88.7687286 69.0693643,80 80,80 Z" id="Combined-Shape" fill="#1B5252"></path>
+                        <polygon id="Rectangle" fill="#0E0E0E" points="80 120 120 160 80 160"></polygon>
+                        <polygon id="Rectangle" fill="#1B5252" points="60 120 100 160 60 160"></polygon>
+                        <polygon id="Rectangle" fill="#0E0E0E" points="140 1.13686838e-13 200 1.13686838e-13 200 60"></polygon>
+                        <polygon id="Rectangle" points="140 20 180 20 180 60"></polygon>
+                        <polygon id="Rectangle" fill="#1B5252" transform="translate(130.000000, 70.000000) rotate(-180.000000) translate(-130.000000, -70.000000) " points="100 40 160 40 160 100"></polygon>
+                        <rect id="Rectangle" x="0" y="1.13686838e-13" width="80" height="60"></rect>
+                        <rect id="Rectangle" fill="#1B5252" x="20" y="40" width="20" height="20"></rect>
+                        <path d="M80,40 L80,59.9994962 L45.0001514,59.9997409 C51.986366,48.0438797 65.0442688,40 80,40 L80,40 Z" id="Combined-Shape" fill="#1B5252"></path>
+                        <circle id="Oval" cx="80" cy="80" r="40"></circle>
+                        <rect id="Rectangle" fill="#1B5252" x="160" y="40" width="40" height="60"></rect>
+                        <polygon id="Rectangle" points="140 20 180 20 180 60"></polygon>
+                        <path d="M0,20 L80,20 C135.228475,20 180,64.771525 180,120 L180,200 L180,200 L0,200 L0,20 Z" id="Rectangle"></path>
+                        <polygon id="Rectangle" points="100 40 160 40 160 100"></polygon>
+                        <rect id="Rectangle" fill="#0E0E0E" x="100" y="100" width="60" height="60"></rect>
+                        <rect id="Rectangle" fill="#1B5252" x="0" y="120" width="40" height="40"></rect>
+                        <rect id="Rectangle" x="20" y="140" width="140" height="60"></rect>
+                        <path d="M100,140 L120,140 L120,160 L140,160 L140,180 L160,180 L160,200 L100,200 L100,180 L100,140 Z" id="Combined-Shape" fill="#1B5252"></path>
+                        <path d="M130,100 C146.568542,100 160,113.431458 160,130 L160,200 L160,200 L100,200 L100,130 C100,113.431458 113.431458,100 130,100 Z" id="Rectangle"></path>
+                        <polygon id="Rectangle" stroke-width="2" points="0 1.13686838e-13 200 1.13686838e-13 200 157.045548 200 200 0 200"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

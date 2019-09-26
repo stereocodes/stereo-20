@@ -1,8 +1,7 @@
 import React from 'react';
-import Button from './01_atoms/button';
-import Logo from './01_atoms/logo';
-import Header from './01_atoms/header';
 import Intro from './04_ecosystems/intro';
+import About from './04_ecosystems/about';
+import Capabilites from './04_ecosystems/capabilities';
 import {createGlobalStyle} from 'styled-components';
 import '../static/fonts/fonts.css';
 
@@ -25,16 +24,15 @@ const CSSGlobals = createGlobalStyle`
     font-size: 1.6rem;
     background: var(--color-PRIMARY);
   }
-
 `;
 
 const App = () => {
   return (
     <>
       <CSSGlobals />
-      
-      <Logo/>
       <Intro />
+      <About />
+      <Capabilites />
     </>
   )
 }

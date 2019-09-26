@@ -8,9 +8,11 @@ interface IStyledSection {
 }
 
 const StyledSection = styled.section`
+  padding: 100px 0;
   background: ${(p:IStyledSection) => p.color};
   display: grid;
   grid-template-columns: repeat(28, 1fr);
+  color: ${(p:IStyledSection) => p.color === 'var(--color-SECONDARY)' ? 'var(--color-PRIMARY)' : 'var(--color-SECONDARY)'};
 `;
 
 
