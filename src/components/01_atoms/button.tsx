@@ -11,7 +11,7 @@ const Button = (props: IButton) => {
 }
 
 Button.defaultProps = {
-  label: 'hello world'
+  label: 'hello world 1'
 }
 
 export default Button;

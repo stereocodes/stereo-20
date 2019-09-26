@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="171px" height="154px" viewBox="0 0 171 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9">
+            <rect id="Rectangle" fill="#123131" x="0" y="0" width="171" height="154"></rect>
+            <g id="Group-5" transform="translate(32.000000, 32.000000)" stroke="#FFB73E" stroke-width="3">
+                <path d="M37,56 L37,38 L103.521011,38 C106.546973,38 109,40.453027 109,43.4789892 C109,46.5049514 106.546973,48.9579784 103.521011,48.9579784 L53.5,48.9579784 L53.5,48.9579784 L102.398366,57.2573242" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="72 89 0 89 0 71 0 71 72 71"></polyline>
+                <path d="M0.110837438,79.5 L59.6551724,79.5" id="Line-3" stroke-linecap="round"></path>
+                <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="21 56 0 56 0 38 0 38 21 38"></polyline>
+                <path d="M0.0314039409,46.5 L16.9022989,46.5" id="Line-3" stroke-linecap="round"></path>
+                <path d="M100.016529,1.88846154 L100.016529,22.7884615" id="Line" stroke-linecap="round"></path>
+                <path d="M91.5,0.709302326 L108.5,0.709302326" id="Line-2" stroke-linecap="round"></path>
+                <rect id="Rectangle" x="88" y="72" width="21" height="17" rx="8.5"></rect>
+                <path d="M29.0957693,12 L69.5,12 C72.5375661,12 75,14.4624339 75,17.5 C75,20.5375661 72.5375661,23 69.5,23 L0,23 L0,23" id="Shape" stroke-linecap="round"></path>
+                <path d="M22.6744571,1 L69.5,1 C72.5375661,1 75,3.46243388 75,6.5 C75,9.53756612 72.5375661,12 69.5,12 L0,12 L0,12" id="Shape" stroke-linecap="round" transform="translate(37.500000, 6.500000) rotate(-180.000000) translate(-37.500000, -6.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

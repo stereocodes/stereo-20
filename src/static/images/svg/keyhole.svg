@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="667px" height="869px" viewBox="0 0 667 869" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>keyhole</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="17.0519031%" x2="100%" y2="82.9480969%" id="linearGradient-1">
+            <stop stop-color="#123131" offset="0%"></stop>
+            <stop stop-color="#A3711C" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-6.2%" y="-7.7%" width="112.8%" height="115.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-6.2%" y="-7.7%" width="112.8%" height="115.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="2.12332524%" y1="46.636711%" x2="100%" y2="53.363289%" id="linearGradient-4">
+            <stop stop-color="#61A598" offset="0%"></stop>
+            <stop stop-color="#FFA815" offset="100%"></stop>
+        </linearGradient>
+        <path d="M421.25,3.55271368e-15 L570.816406,38.7910156" id="path-5"></path>
+        <filter x="-5.2%" y="-20.2%" width="110.5%" height="140.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="2.12332524%" y1="47.0416362%" x2="100%" y2="52.9583638%" id="linearGradient-7">
+            <stop stop-color="#61A598" offset="0%"></stop>
+            <stop stop-color="#FFA815" offset="100%"></stop>
+        </linearGradient>
+        <path d="M82.8164062,3 L229.882812,38.5" id="path-8"></path>
+        <filter x="-5.3%" y="-21.7%" width="109.9%" height="142.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-528.000000, -974.000000)">
+            <g id="keyhole" transform="translate(537.000000, 974.000000)">
+                <g id="Group-3" transform="translate(104.000000, 130.000000)">
+                    <rect id="Rectangle" fill="#123131" x="2" y="10" width="440" height="600"></rect>
+                    <g id="keyhole" transform="translate(0.000000, 10.000000)"></g>
+                    <g id="boxes" transform="translate(2.000000, 0.000000)">
+                        <g id="boxes-left">
+                            <g id="box-2" transform="translate(140.750000, 300.000000) rotate(-90.000000) translate(-140.750000, -300.000000) translate(40.750000, 200.000000)">
+                                <rect id="Rectangle" x="-1.13686838e-13" y="0" width="200" height="200"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="60" y="60" width="80" height="80"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="round" transform="translate(100.000000, 100.000000) rotate(-270.000000) translate(-100.000000, -100.000000) " points="60 60 140 140 60 140"></polygon>
+                                <path d="M60,20 L60,40 L80,40 L80,59.999 L100,60 L100,80 L40,80 L40,60 L40,20 L60,20 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="40" y="20" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" stroke-linejoin="bevel" points="80 80 120 80 120 120"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="bevel" transform="translate(100.000000, 100.000000) rotate(-180.000000) translate(-100.000000, -100.000000) " points="80 80 120 80 120 120"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" x="-1.13686838e-13" y="80" width="80" height="60"></rect>
+                                <path d="M79.999,120.001 L80,140 L60,140 L79.999,120.001 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="140" y="120" width="40" height="80"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" x="0" y="160" width="200" height="40"></rect>
+                                <path d="M140,100 C151.045695,100 160,108.954305 160,120 L160,200 L160,200 L140,200 L140,100 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" x="-1.13686838e-13" y="80" width="40" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="160" y="0" width="40" height="40"></rect>
+                                <path d="M100,20 C124.850972,20 142.023519,20 151.517639,20 C161.011759,20 170.50588,20 180,20 L180,100 L100,100 L100,20 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" x="40" y="160" width="40" height="40"></rect>
+                                <circle id="Oval" stroke="#FFB73E" fill="#0E0E0E" cx="40" cy="160" r="20"></circle>
+                                <rect id="Rectangle" stroke="#FFB73E" x="40" y="140" width="60" height="20"></rect>
+                                <path d="M40,140 C51.045695,140 60,148.954305 60,160 L60,160 L40,160 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <path d="M100,20 C111.045695,20 120,28.954305 120,40 L120,40 L100,40 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(110.000000, 30.000000) rotate(-270.000000) translate(-110.000000, -30.000000) "></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" stroke-linejoin="bevel" points="160 140 180 140 160 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="bevel" transform="translate(170.000000, 150.000000) rotate(-180.000000) translate(-170.000000, -150.000000) " points="160 140 180 140 160 160"></polygon>
+                                <path d="M159.655511,159.997093 C148.768729,159.813225 140,150.930636 140,140 C140,128.954305 148.954305,120 160,120 C171.045695,120 180,128.954305 180,140 L180,140 L160,160 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" points="40 0 40 40 0 40"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="60 40 60 80 -1.13686838e-13 80"></polygon>
+                                <path d="M60,20 L60,40 L80,40 L80,59.999 L100,60 L100,80 L40,80 L40,60 L40,20 L60,20 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(30.000000, 60.000000) rotate(-180.000000) translate(-30.000000, -60.000000) " points="60 40 60 80 -1.13686838e-13 80"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="140" y="40" width="20" height="20"></rect>
+                                <rect id="Rectangle" x="-1.13686838e-13" y="0" width="200" height="200"></rect>
+                            </g>
+                            <g id="box-3" transform="translate(101.250000, 490.500000) rotate(-180.000000) translate(-101.250000, -490.500000) translate(1.250000, 381.000000)">
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="0" y="60" width="20" height="40"></rect>
+                                <circle id="Oval" stroke="#FFB73E" cx="80" cy="80" r="40"></circle>
+                                <rect id="Rectangle" x="0" y="100" width="60" height="100"></rect>
+                                <path d="M70,90 C81.045695,90 90,98.954305 90,110 L90,110 L50,110 L50.0029071,109.655511 C50.186775,98.7687286 59.0693643,90 70,90 Z" id="Combined-Shape" stroke="#FFB73E" transform="translate(70.000000, 100.000000) rotate(-90.000000) translate(-70.000000, -100.000000) "></path>
+                                <path d="M90,90 C101.045695,90 110,98.954305 110,110 L110,110 L70,110 L70.0029071,109.655511 C70.186775,98.7687286 79.0693643,90 90,90 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(90.000000, 100.000000) rotate(-270.000000) translate(-90.000000, -100.000000) "></path>
+                                <path d="M80,80 C91.045695,80 100,88.954305 100,100 L100,100 L60,100 L60.0029071,99.6555106 C60.186775,88.7687286 69.0693643,80 80,80 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" points="80 120 120 160 80 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" points="60 120 100 160 60 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" points="140 1.13686838e-13 200 1.13686838e-13 200 60"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="140 20 180 20 180 60"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(130.000000, 70.000000) rotate(-180.000000) translate(-130.000000, -70.000000) " points="100 40 160 40 160 100"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" x="0" y="1.13686838e-13" width="80" height="60"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="20" y="40" width="20" height="20"></rect>
+                                <path d="M80,40 L80,59.9994962 L45.0001514,59.9997409 C51.986366,48.0438797 65.0442688,40 80,40 L80,40 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <circle id="Oval" stroke="#FFB73E" cx="80" cy="80" r="40"></circle>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="160" y="40" width="40" height="60"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="140 20 180 20 180 60"></polygon>
+                                <path d="M0,20 L80,20 C135.228475,20 180,64.771525 180,120 L180,200 L180,200 L0,200 L0,20 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="100 40 160 40 160 100"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="100" y="100" width="60" height="60"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="0" y="120" width="40" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" x="21" y="160" width="139" height="40"></rect>
+                                <path d="M100,140 L120,140 L120,160 L140,160 L140,180 L160,180 L160,200 L100,200 L100,180 L100,140 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <path d="M130,100 C146.568542,100 160,113.431458 160,130 L160,200 L160,200 L100,200 L100,130 C100,113.431458 113.431458,100 130,100 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="21" y="179" width="139" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="21.25" y="179" width="39" height="40"></rect>
+                            </g>
+                            <g id="box-1">
+                                <rect id="Rectangle" transform="translate(100.000000, 100.000000) rotate(-90.000000) translate(-100.000000, -100.000000) " x="0" y="0" width="200" height="200"></rect>
+                                <rect id="Rectangle" stroke="#0E0E0E" transform="translate(20.000000, 120.000000) rotate(-90.000000) translate(-20.000000, -120.000000) " x="0" y="100" width="40" height="40"></rect>
+                                <path d="M136,-10 C165.823376,-10 190,14.1766235 190,44 L190,150 L50,150 L50,-10 L136,-10 Z M170,110 L150,110 L150,150 L190,150 L189.999,129.999 L170,130 L170,110 Z" id="Combined-Shape" stroke="#FFB73E" transform="translate(120.000000, 70.000000) rotate(-90.000000) translate(-120.000000, -70.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 150.000000) rotate(-90.000000) translate(-100.000000, -150.000000) " x="50" y="50" width="100" height="200"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" transform="translate(50.000000, 100.000000) rotate(-360.000000) translate(-50.000000, -100.000000) " points="4.18194114e-12 -1.54321e-12 100 -1.54321e-12 100 200 4.18194114e-12 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 150.000000) rotate(-90.000000) translate(-100.000000, -150.000000) " x="50" y="50" width="100" height="200"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 100.000000) rotate(-90.000000) translate(-100.000000, -100.000000) " x="80" y="60" width="40" height="80" rx="16"></rect>
+                                <path d="M30,90 L131.910765,91.21442 C164.103924,91.5980499 190,117.804555 190,150 L190,150 L190,150 L30,150 L30,90 Z" id="Rectangle" stroke="#FFB73E" transform="translate(110.000000, 120.000000) scale(-1, 1) rotate(-90.000000) translate(-110.000000, -120.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 80.000000) rotate(-90.000000) translate(-100.000000, -80.000000) " x="60" y="60" width="80" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(110.000000, 110.000000) rotate(-90.000000) translate(-110.000000, -110.000000) " x="100" y="100" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(70.000000, 130.000000) rotate(-90.000000) translate(-70.000000, -130.000000) " points="40 100 100 100 100 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(70.000000, 170.000000) rotate(-90.000000) translate(-70.000000, -170.000000) " points="40 140 100 140 100 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="0" y="140" width="60" height="60"></rect>
+                                <path d="M70,30 C70,41.045695 61.045695,50 50,50 C38.954305,50 30,41.045695 30,30 L30,30 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(50.000000, 40.000000) rotate(-90.000000) translate(-50.000000, -40.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(40.000000, 60.000000) rotate(-90.000000) translate(-40.000000, -60.000000) " x="20" y="20" width="40" height="80"></rect>
+                                <path d="M50,-10 L136,-10 C165.823376,-10 190,14.1766235 190,44 L190,150 L190,150 L50,150 L50,-10 Z" id="Rectangle" stroke="#FFB73E" transform="translate(120.000000, 70.000000) rotate(-90.000000) translate(-120.000000, -70.000000) "></path>
+                                <path d="M60,40 C60,51.045695 51.045695,60 40,60 C28.954305,60 20,51.045695 20,40 L20,40 Z" id="Combined-Shape" stroke="#FFB73E" transform="translate(40.000000, 50.000000) rotate(-360.000000) translate(-40.000000, -50.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(120.000000, 160.000000) rotate(-90.000000) translate(-120.000000, -160.000000) " x="100" y="140" width="40" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(90.000000, 129.500000) rotate(-90.000000) translate(-90.000000, -129.500000) " x="80" y="120" width="20" height="19"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(150.000000, 80.000000) rotate(-90.000000) translate(-150.000000, -80.000000) " x="130" y="50" width="40" height="60"></rect>
+                                <path d="M90,90 L190,90 C223.137085,90 250,116.862915 250,150 L250,150 L250,150 L90,150 L90,90 Z" id="Rectangle" stroke="#FFB73E" transform="translate(170.000000, 120.000000) rotate(-90.000000) translate(-170.000000, -120.000000) "></path>
+                                <path d="M140.000112,60.0001116 C155.365623,60.0001116 169.384446,65.7781322 179.999888,75.280323 L179.998219,100.000112 L140.000112,100.000112 L140.000112,60.0001116 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(160.000000, 80.000112) rotate(-90.000000) translate(-160.000000, -80.000112) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(180.000000, 140.000000) rotate(-90.000000) translate(-180.000000, -140.000000) " x="160" y="120" width="40" height="40"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(130.000000, 30.000000) rotate(-90.000000) translate(-130.000000, -30.000000) " points="120 20 140 40 120 40"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(130.000000, 10.000000) rotate(-90.000000) translate(-130.000000, -10.000000) " points="120 0 140 20 120 20"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="20" y="160" width="20" height="20"></rect>
+                                <path d="M40,160 L40,160.001 L1,199 L1,160 L40,160 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="20" y="160" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(180.000000, 180.000000) rotate(-90.000000) translate(-180.000000, -180.000000) " points="160 160 200 200 160 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(10.000000, 150.000000) rotate(-90.000000) translate(-10.000000, -150.000000) " x="0" y="140" width="20" height="20"></rect>
+                                <rect id="Rectangle" transform="translate(100.000000, 100.000000) rotate(-90.000000) translate(-100.000000, -100.000000) " x="0" y="0" width="200" height="200"></rect>
+                            </g>
+                        </g>
+                        <g id="boxes-right" transform="translate(200.000000, 0.000000)">
+                            <g id="box-2" transform="translate(140.750000, 300.000000) rotate(-360.000000) translate(-140.750000, -300.000000) translate(40.750000, 200.000000)">
+                                <rect id="Rectangle" x="0" y="1.13686838e-13" width="200" height="200"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="0" y="60" width="20" height="40"></rect>
+                                <circle id="Oval" stroke="#FFB73E" cx="80" cy="80" r="40"></circle>
+                                <rect id="Rectangle" x="0" y="100" width="60" height="100"></rect>
+                                <path d="M70,90 C81.045695,90 90,98.954305 90,110 L90,110 L50,110 L50.0029071,109.655511 C50.186775,98.7687286 59.0693643,90 70,90 Z" id="Combined-Shape" stroke="#FFB73E" transform="translate(70.000000, 100.000000) rotate(-90.000000) translate(-70.000000, -100.000000) "></path>
+                                <path d="M90,90 C101.045695,90 110,98.954305 110,110 L110,110 L70,110 L70.0029071,109.655511 C70.186775,98.7687286 79.0693643,90 90,90 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(90.000000, 100.000000) rotate(-270.000000) translate(-90.000000, -100.000000) "></path>
+                                <path d="M80,80 C91.045695,80 100,88.954305 100,100 L100,100 L60,100 L60.0029071,99.6555106 C60.186775,88.7687286 69.0693643,80 80,80 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" points="80 120 120 160 80 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" points="60 120 100 160 60 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" points="140 1.13686838e-13 200 1.13686838e-13 200 60"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="140 20 180 20 180 60"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(130.000000, 70.000000) rotate(-180.000000) translate(-130.000000, -70.000000) " points="100 40 160 40 160 100"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" x="0" y="1.13686838e-13" width="80" height="60"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="20" y="40" width="20" height="20"></rect>
+                                <path d="M80,40 L80,59.9994962 L45.0001514,59.9997409 C51.986366,48.0438797 65.0442688,40 80,40 L80,40 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <circle id="Oval" stroke="#FFB73E" cx="80" cy="80" r="40"></circle>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="160" y="40" width="40" height="60"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="140 20 180 20 180 60"></polygon>
+                                <path d="M0,20 L80,20 C135.228475,20 180,64.771525 180,120 L180,200 L180,200 L0,200 L0,20 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="100 40 160 40 160 100"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="100" y="100" width="60" height="60"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="0" y="120" width="40" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" x="20" y="140" width="140" height="60"></rect>
+                                <path d="M100,140 L120,140 L120,160 L140,160 L140,180 L160,180 L160,200 L100,200 L100,180 L100,140 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <path d="M130,100 C146.568542,100 160,113.431458 160,130 L160,200 L160,200 L100,200 L100,130 C100,113.431458 113.431458,100 130,100 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" points="0 1.13686838e-13 200 1.13686838e-13 200 157.045548 200 200 0 200"></polygon>
+                            </g>
+                            <g id="box-3" transform="translate(101.000000, 490.000000) rotate(-180.000000) translate(-101.000000, -490.000000) translate(1.000000, 380.000000)">
+                                <rect id="Rectangle" stroke="#0E0E0E" transform="translate(20.000000, 120.000000) rotate(-90.000000) translate(-20.000000, -120.000000) " x="0" y="100" width="40" height="40"></rect>
+                                <path d="M136,-10 C165.823376,-10 190,14.1766235 190,44 L190,150 L50,150 L50,-10 L136,-10 Z M170,110 L150,110 L150,150 L190,150 L189.999,129.999 L170,130 L170,110 Z" id="Combined-Shape" transform="translate(120.000000, 70.000000) rotate(-90.000000) translate(-120.000000, -70.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 150.000000) rotate(-90.000000) translate(-100.000000, -150.000000) " x="50" y="50" width="100" height="200"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" transform="translate(50.000000, 100.000000) rotate(-360.000000) translate(-50.000000, -100.000000) " points="4.18194114e-12 -1.54321e-12 100 -1.54321e-12 100 200 4.18194114e-12 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 150.000000) rotate(-90.000000) translate(-100.000000, -150.000000) " x="50" y="50" width="100" height="200"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 100.000000) rotate(-90.000000) translate(-100.000000, -100.000000) " x="80" y="60" width="40" height="80" rx="16"></rect>
+                                <path d="M30,90 L131.910765,91.21442 C164.103924,91.5980499 190,117.804555 190,150 L190,150 L190,150 L30,150 L30,90 Z" id="Rectangle" stroke="#FFB73E" transform="translate(110.000000, 120.000000) scale(-1, 1) rotate(-90.000000) translate(-110.000000, -120.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(100.000000, 80.000000) rotate(-90.000000) translate(-100.000000, -80.000000) " x="60" y="60" width="80" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(110.000000, 110.000000) rotate(-90.000000) translate(-110.000000, -110.000000) " x="100" y="100" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(70.000000, 130.000000) rotate(-90.000000) translate(-70.000000, -130.000000) " points="40 100 100 100 100 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(70.000000, 170.000000) rotate(-90.000000) translate(-70.000000, -170.000000) " points="40 140 100 140 100 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="0" y="140" width="60" height="60"></rect>
+                                <path d="M70,30 C70,41.045695 61.045695,50 50,50 C38.954305,50 30,41.045695 30,30 L30,30 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(50.000000, 40.000000) rotate(-90.000000) translate(-50.000000, -40.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(40.000000, 60.000000) rotate(-90.000000) translate(-40.000000, -60.000000) " x="20" y="20" width="40" height="80"></rect>
+                                <path d="M50,-10 L136,-10 C165.823376,-10 190,14.1766235 190,44 L190,150 L190,150 L50,150 L50,-10 Z" id="Rectangle" stroke="#FFB73E" transform="translate(120.000000, 70.000000) rotate(-90.000000) translate(-120.000000, -70.000000) "></path>
+                                <path d="M60,40 C60,51.045695 51.045695,60 40,60 C28.954305,60 20,51.045695 20,40 L20,40 Z" id="Combined-Shape" stroke="#FFB73E" transform="translate(40.000000, 50.000000) rotate(-360.000000) translate(-40.000000, -50.000000) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(90.000000, 129.500000) rotate(-90.000000) translate(-90.000000, -129.500000) " x="80" y="120" width="20" height="19"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(150.000000, 80.000000) rotate(-90.000000) translate(-150.000000, -80.000000) " x="130" y="50" width="40" height="60"></rect>
+                                <path d="M90,90 L190,90 C223.137085,90 250,116.862915 250,150 L250,150 L250,150 L90,150 L90,90 Z" id="Rectangle" stroke="#FFB73E" transform="translate(170.000000, 120.000000) rotate(-90.000000) translate(-170.000000, -120.000000) "></path>
+                                <path d="M140.000112,60.0001116 C155.365623,60.0001116 169.384446,65.7781322 179.999888,75.280323 L179.998219,100.000112 L140.000112,100.000112 L140.000112,60.0001116 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(160.000000, 80.000112) rotate(-90.000000) translate(-160.000000, -80.000112) "></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(180.000000, 140.000000) rotate(-90.000000) translate(-180.000000, -140.000000) " x="160" y="120" width="40" height="40"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(130.000000, 30.000000) rotate(-90.000000) translate(-130.000000, -30.000000) " points="120 20 140 40 120 40"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(130.000000, 10.000000) rotate(-90.000000) translate(-130.000000, -10.000000) " points="120 0 140 20 120 20"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="20" y="160" width="20" height="20"></rect>
+                                <path d="M40,160 L40,160.001 L1,199 L1,160 L40,160 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(30.000000, 170.000000) rotate(-90.000000) translate(-30.000000, -170.000000) " x="20" y="160" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(180.000000, 180.000000) rotate(-90.000000) translate(-180.000000, -180.000000) " points="160 160 200 200 160 200"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" transform="translate(10.000000, 150.000000) rotate(-90.000000) translate(-10.000000, -150.000000) " x="0" y="140" width="20" height="20"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" transform="translate(120.000000, 180.000000) rotate(-90.000000) translate(-120.000000, -180.000000) " x="80" y="160" width="80" height="40"></rect>
+                            </g>
+                            <g id="box-1" transform="translate(100.000000, 100.000000) rotate(-90.000000) translate(-100.000000, -100.000000) ">
+                                <rect id="Rectangle" x="-1.13686838e-13" y="0" width="200" height="200"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="60" y="60" width="80" height="80"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="round" transform="translate(100.000000, 100.000000) rotate(-270.000000) translate(-100.000000, -100.000000) " points="60 60 140 140 60 140"></polygon>
+                                <path d="M60,20 L60,40 L80,40 L80,59.999 L100,60 L100,80 L40,80 L40,60 L40,20 L60,20 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" x="40" y="20" width="20" height="20"></rect>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" stroke-linejoin="bevel" points="80 80 120 80 120 120"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="bevel" transform="translate(100.000000, 100.000000) rotate(-180.000000) translate(-100.000000, -100.000000) " points="80 80 120 80 120 120"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" x="-1.13686838e-13" y="80" width="80" height="60"></rect>
+                                <path d="M79.999,120.001 L80,140 L60,140 L79.999,120.001 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="140" y="120" width="40" height="80"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" x="0" y="160" width="200" height="40"></rect>
+                                <path d="M140,100 C151.045695,100 160,108.954305 160,120 L160,200 L160,200 L140,200 L140,100 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" x="-1.13686838e-13" y="80" width="40" height="40"></rect>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="160" y="0" width="40" height="40"></rect>
+                                <path d="M100,20 C124.850972,20 142.023519,20 151.517639,20 C161.011759,20 170.50588,20 180,20 L180,100 L100,100 L100,20 Z" id="Rectangle" stroke="#FFB73E"></path>
+                                <rect id="Rectangle" stroke="#FFB73E" x="40" y="160" width="40" height="40"></rect>
+                                <circle id="Oval" stroke="#FFB73E" fill="#0E0E0E" cx="40" cy="160" r="20"></circle>
+                                <rect id="Rectangle" stroke="#FFB73E" x="40" y="140" width="60" height="20"></rect>
+                                <path d="M40,140 C51.045695,140 60,148.954305 60,160 L60,160 L40,160 Z" id="Combined-Shape" stroke="#FFB73E" fill="#1B5252"></path>
+                                <path d="M100,20 C111.045695,20 120,28.954305 120,40 L120,40 L100,40 Z" id="Combined-Shape" stroke="#FFB73E" fill="#0E0E0E" transform="translate(110.000000, 30.000000) rotate(-270.000000) translate(-110.000000, -30.000000) "></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" stroke-linejoin="bevel" points="160 140 180 140 160 160"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" stroke-linejoin="bevel" transform="translate(170.000000, 150.000000) rotate(-180.000000) translate(-170.000000, -150.000000) " points="160 140 180 140 160 160"></polygon>
+                                <path d="M159.655511,159.997093 C148.768729,159.813225 140,150.930636 140,140 C140,128.954305 148.954305,120 160,120 C171.045695,120 180,128.954305 180,140 L180,140 L160,160 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#1B5252" points="40 0 40 40 0 40"></polygon>
+                                <polygon id="Rectangle" stroke="#FFB73E" points="60 40 60 80 -1.13686838e-13 80"></polygon>
+                                <path d="M60,20 L60,40 L80,40 L80,59.999 L100,60 L100,80 L40,80 L40,60 L40,20 L60,20 Z" id="Combined-Shape" stroke="#FFB73E"></path>
+                                <polygon id="Rectangle" stroke="#FFB73E" fill="#0E0E0E" transform="translate(30.000000, 60.000000) rotate(-180.000000) translate(-30.000000, -60.000000) " points="60 40 60 80 -1.13686838e-13 80"></polygon>
+                                <rect id="Rectangle" stroke="#FFB73E" fill="#1B5252" x="140" y="40" width="20" height="20"></rect>
+                                <rect id="Rectangle" x="-1.13686838e-13" y="0" width="200" height="200"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M84.0798507,441.862414 C54.6645892,396.400598 38.25,342.753188 38.25,286.5 C38.25,128.163438 166.850856,0 325.25,0 C483.649144,0 612.25,128.163438 612.25,286.5 C612.25,341.746078 596.417669,394.501388 567.954924,439.46388 L649.062218,857 L3.43731583,857 L84.0798507,441.862414 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#FFB73E" fill-rule="nonzero"></path>
+                <path d="M84.0798507,441.862414 C54.6645892,396.400598 38.25,342.753188 38.25,286.5 C38.25,128.163438 166.850856,0 325.25,0 C483.649144,0 612.25,128.163438 612.25,286.5 C612.25,341.746078 596.417669,394.501388 567.954924,439.46388 L649.062218,857 L3.43731583,857 L84.0798507,441.862414 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#F1A82F" fill-rule="nonzero"></path>
+                <path d="M105.282299,437.596925 C75.1585532,393.948326 58.25,341.569955 58.25,286.5 C58.25,139.224416 177.881325,20 325.25,20 C472.618675,20 592.25,139.224416 592.25,286.5 C592.25,340.592142 575.936646,392.11001 546.77505,435.314485 L624.80333,837 L27.6962707,837 L105.282299,437.596925 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#D89A32" fill-rule="nonzero"></path>
+                <path d="M126.555703,432.966162 C95.6896887,391.304726 78.25,340.294861 78.25,286.5 C78.25,150.285394 188.911795,40 325.25,40 C461.588205,40 572.25,150.285394 572.25,286.5 C572.25,339.347328 555.419718,389.529413 525.525543,430.806561 L600.544441,817 L51.9552256,817 L126.555703,432.966162 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#BD8A34" fill-rule="nonzero"></path>
+                <path d="M147.91062,427.915781 C116.264752,388.445905 98.25,338.916756 98.25,286.5 C98.25,161.346372 199.942264,60 325.25,60 C450.557736,60 552.25,161.346372 552.25,286.5 C552.25,338.000596 534.860414,386.735948 504.196067,425.887067 L576.285553,797 L76.2141805,797 L147.91062,427.915781 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#9D7A40" fill-rule="nonzero"></path>
+                <path d="M169.360492,422.37659 C136.892617,385.342493 118.25,337.422032 118.25,286.5 C118.25,172.40735 210.972733,80 325.25,80 C439.527267,80 532.25,172.40735 532.25,286.5 C532.25,336.538431 514.250275,383.700464 482.773531,420.488478 L552.026665,777 L100.473135,777 L169.360492,422.37659 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#335353" fill-rule="nonzero"></path>
+                <path d="M190.922863,416.258261 C157.58526,381.957689 138.25,335.793786 138.25,286.5 C138.25,183.468328 222.003203,100 325.25,100 C428.496797,100 512.25,183.468328 512.25,286.5 C512.25,334.944049 493.577906,380.386437 461.240844,414.522818 L527.767777,757 L124.73209,757 L190.922863,416.258261 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#183E3E" fill-rule="nonzero"></path>
+                <path d="M212.62135,409.439225 C178.35938,378.244277 158.25,334.010576 158.25,286.5 C158.25,194.529306 233.033672,120 325.25,120 C417.466328,120 492.25,194.529306 492.25,286.5 C492.25,333.196133 472.827468,376.746961 439.575046,407.871915 L503.508888,737 L148.991045,737 L212.62135,409.439225 Z M325.25,140 C244.064142,140 178.25,205.590284 178.25,286.5 C178.25,333.273587 200.24476,374.927495 234.488962,401.749557 L173.25,717 L479.25,717 L417.744131,400.370995 C450.995558,373.511998 472.25,332.479677 472.25,286.5 C472.25,205.590284 406.435858,140 325.25,140 Z" id="border" fill="#123131" fill-rule="nonzero"></path>
+                <g id="shadows" transform="translate(0.000000, 402.000000)" stroke-linecap="square" stroke-width="3">
+                    <path d="M479.5,315.25 L649,452.75" id="Line-4" stroke="url(#linearGradient-1)" opacity="0.322591146" filter="url(#filter-2)"></path>
+                    <path d="M0.5,321.25 L170,458.75" id="Line-4" stroke="url(#linearGradient-1)" opacity="0.322591146" filter="url(#filter-3)" transform="translate(85.000000, 389.750000) scale(-1, 1) translate(-85.000000, -389.750000) "></path>
+                    <g id="Line-4-Copy" opacity="0.185616629" filter="url(#filter-6)">
+                        <use stroke-opacity="0.357681381" stroke="#B7B7B7" xlink:href="#path-5"></use>
+                        <use stroke="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Line-4-Copy" opacity="0.185616629" filter="url(#filter-9)" transform="translate(156.816406, 21.000000) scale(-1, 1) translate(-156.816406, -21.000000) ">
+                        <use stroke-opacity="0.357681381" stroke="#B7B7B7" xlink:href="#path-8"></use>
+                        <use stroke="url(#linearGradient-7)" xlink:href="#path-8"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

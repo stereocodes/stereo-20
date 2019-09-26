@@ -7,18 +7,24 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
+  watch: true,
   entry: Path.resolve(__dirname, '../src/index.tsx'),
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/',
-    path: Path.resolve(__dirname, '../dist')
+    path: Path.resolve(__dirname, 'dist')
   },
   optimization: {
     removeAvailableModules: false,
     removeEmptyChunks: false,
     splitChunks: false
   },
-  devserver: true,
+  devServer: {
+    contentBase: Path.resolve('..src/static'),
+    publicPath: '/',
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [
       {
