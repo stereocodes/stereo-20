@@ -5,7 +5,7 @@ const eye = require('~/static/images/svg/eye.svg');
 
 const Capabilites = () => {
   return (
-    <section>
+    <section style={{position: 'relative'}}>
       <Ticker/>
       <img src={eye} alt=""/>
     </section>
