@@ -16,6 +16,12 @@ const StyledHeader = styled.h1`
     width: 100%;
     text-align: center;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 5.0rem;
+    line-height:50px;
+    letter-spacing: -1.75px;
+    margin-bottom:50px;
+  }
 `;
 
 interface IHeader {
