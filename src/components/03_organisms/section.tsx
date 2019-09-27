@@ -15,6 +15,7 @@ const StyledSection = styled.section`
   color: ${(p:IStyledSection) => p.color === 'var(--color-SECONDARY)' ? 'var(--color-PRIMARY)' : 'var(--color-SECONDARY)'};
   overflow: hidden;
   width: 100%;
+  position: relative;
 `;
 
 
