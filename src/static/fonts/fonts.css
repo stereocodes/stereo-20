@@ -3,3 +3,9 @@
   src: url('./GlacialIndifference-Bold.otf');
   font-weight: 700;
 }
+
+@font-face{
+  font-family: 'nunito';
+  src: url('./NunitoSans-Regular.ttf');
+  font-weight: 300;
+}

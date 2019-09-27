@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from '../03_organisms/section';
+import Ticker from '../02_molecules/ticker';
 const eye = require('~/static/images/svg/eye.svg');
 
 const StyledEye = styled.div`
@@ -15,6 +16,7 @@ const Capabilites = () => {
   return (
     <Section label="">
       <StyledEye>
+        <Ticker/>
         <img src={eye} alt=""/>
       </StyledEye>
     </Section>

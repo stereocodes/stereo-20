@@ -11,14 +11,28 @@ const StyledAboutContainer = styled.div`
   img{
     display: block; 
     width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
+    max-width: 280px;
+    margin: 0 auto 50px;
+    @media screen and (max-width: 768px) {
+      max-width: 150px;
+    }
   }
   p{
     font-size: 2.2rem;
     line-height: 40px;
     text-align: center;
     margin-bottom: 100px;
+    font-family: 'nunito', sans-serif;
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 35px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    grid-column: 6 / span 18;
+  }
+  @media screen and (max-width: 768px) {
+    grid-column: 2 / span 26;
   }
 `;
 

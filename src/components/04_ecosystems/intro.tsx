@@ -18,8 +18,8 @@ const StyledIntroGraphic = styled.div`
 `;
 
 const StyledLogo = styled(Logo)`
-  max-width: 200px;
-  margin: 50px auto;
+  max-width: 170px;
+  margin: 0 auto 50px;
   img{
     display:block;
     width: 100%;

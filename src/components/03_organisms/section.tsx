@@ -13,6 +13,8 @@ const StyledSection = styled.section`
   display: grid;
   grid-template-columns: repeat(28, 1fr);
   color: ${(p:IStyledSection) => p.color === 'var(--color-SECONDARY)' ? 'var(--color-PRIMARY)' : 'var(--color-SECONDARY)'};
+  overflow: hidden;
+  width: 100%;
 `;
 
 

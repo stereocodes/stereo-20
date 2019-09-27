@@ -16,6 +16,9 @@ const CSSGlobals = createGlobalStyle`
     outline: none;
     border: none;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
   }
   html{
     font-size: 62.5%;
@@ -23,6 +26,7 @@ const CSSGlobals = createGlobalStyle`
   body{
     font-size: 1.6rem;
     background: var(--color-PRIMARY);
+    overflow-x: hidden;
   }
 `;
 
