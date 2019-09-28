@@ -30,6 +30,7 @@ const Work = () => {
               subTitle={work.subTitle}
               bgColor={work.color}
               bgImage={work.image}
+              link={work.link ? work.link : null}
               key={j}
             />
           ))

@@ -43,12 +43,20 @@ interface IWorkCard {
   subTitle: string
   bgColor: string
   bgImage: string
+  link?: string
 }
 
 const WorkCard = (props:IWorkCard) => {
+  const openWork = (e:any) => {
+    if (props.link) {
+      window.open(props.link, '_blank')
+    }
+    e.preventDefault();
+  }
   return (
     <StyledWorkCard
       backgroundColor={props.bgColor}
+      onClick={(e:any) => openWork(e)}
     >
       <h3>{props.title}</h3>
       <h5>{props.subTitle}</h5>
