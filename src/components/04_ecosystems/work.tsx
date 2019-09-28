@@ -18,7 +18,7 @@ const Work = () => {
         style={
           {
             gridColumn: i !== 1 ? '6 / span 8' : '16 / span 8',
-            paddingTop: i === 1 ? '100' : '0'
+            paddingTop: i === 1 ? '120px' : '0px'
           }
         }
         key={i}

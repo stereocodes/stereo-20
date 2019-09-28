@@ -22,14 +22,14 @@ export const work = [
       image: workThumbApp
     },
     {
-      title: "HQ TRIVIA ACTION",
-      subTitle: "Development / Strategy",
+      title: "STORE CMS",
+      subTitle: "Design Study",
       color: "#251269",
       image: workThumbBuykea
     },
     {
-      title: "HQ TRIVIA ACTION",
-      subTitle: "Development / Strategy",
+      title: "Patagonia Mobile",
+      subTitle: "Design Study",
       color: "#2F0808",
       image: workThumbPatagonia
     }
@@ -42,19 +42,19 @@ export const work = [
       image: workThumbSpotify
     },
     {
-      title: "SPOTIFY LMS",
-      subTitle: "Development / Strategy / Design",
+      title: "TAROT ILLO",
+      subTitle: "Design",
       color: "#0E0E0E",
       image: workThumbTarot
     },
     {
-      title: "SPOTIFY LMS",
-      subTitle: "Development / Strategy / Design",
+      title: "TWITCH GDC KIOSK",
+      subTitle: "Development / Strategy",
       color: "#54348F",
       image: workThumbTwitch
     },
     {
-      title: "SPOTIFY LMS",
+      title: "STEREO 2018",
       subTitle: "Development / Strategy / Design",
       color: "#9A043B",
       image: workThumbStereo
