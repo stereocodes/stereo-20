@@ -11,7 +11,7 @@ const StyledAboutContainer = styled.div`
   img{
     display: block; 
     width: 100%;
-    max-width: 280px;
+    max-width: 200px;
     margin: 0 auto 50px;
     @media screen and (max-width: 768px) {
       max-width: 150px;

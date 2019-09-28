@@ -6,9 +6,12 @@ const eye = require('~/static/images/svg/eye.svg');
 
 const StyledEye = styled.div`
   grid-column: 6 / span 18;
+  
   img{
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 1;
   }   
 `;
 

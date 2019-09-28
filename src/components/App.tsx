@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from './04_ecosystems/intro';
 import About from './04_ecosystems/about';
 import Capabilites from './04_ecosystems/capabilities';
+import Work from './04_ecosystems/Work';
 import {createGlobalStyle} from 'styled-components';
 import '../static/fonts/fonts.css';
 
@@ -37,6 +38,7 @@ const App = () => {
       <Intro />
       <About />
       <Capabilites />
+      <Work />
     </>
   )
 }

@@ -5,24 +5,30 @@ import Logo from '../01_atoms/logo';
 const keyhole = require('~/static/images/svg/keyhole.svg');
 
 const StyledIntro = styled.div`
-  padding: 120px 20px 100px;
+  padding: 100px 20px 100px;
 `;
 
 const StyledIntroGraphic = styled.div`
   grid-column: 9 / span 12;
   padding: 0 30px;
   img{
-    display: block; 
+    display: block;
     width: 100%;
+  }
+  @media screen and (max-width: 768px){
+    grid-column: 3 / span 24;
   }
 `;
 
 const StyledLogo = styled(Logo)`
   max-width: 170px;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
   img{
     display:block;
     width: 100%;
+  }
+  @media screen and (max-width: 768px){
+    max-width: 100px;
   }
 `;
 
