@@ -1,6 +1,6 @@
 import React,{useEffect, useRef, useState} from 'react';
 import styled, { keyframes, css } from 'styled-components';
-
+import debounce from 'lodash/debounce';
 
 const StyledTickerElement = styled.span`
   text-transform: uppercase;
@@ -11,7 +11,9 @@ const StyledTickerElement = styled.span`
   display: block;
   padding: 0 20px;
   opacity: .1;
-
+  @media screen and (max-width: 768px) {
+    font-size: 5.0rem;
+  }
 `;
 
 
@@ -44,12 +46,22 @@ const tickerString = 'HTML5, css3, JS/17/18/Edge, PHP, Python, Ruby, XML, XSLT, 
 const Ticker = () => {
   const tickersCount = 12;
   const tickers = Array.from({length: tickersCount}, a => useRef(null));
-  const [tickerWidth, setTickerWidth] = useState(0);
+  const [tickerWidth, setTickerWidth] = useState(window.outerWidth);
+  const [tickerTop, setTickerTop] = useState(100);
 
   useEffect(() => {
-    const theWidth = tickers[0].current.getBoundingClientRect().width - window.innerWidth;
+    const theWidth = tickers[0].current.offsetWidth - window.outerWidth;
     setTickerWidth(-theWidth)
-  },[]);
+    window.addEventListener('resize', debounce(handleResize, 100))
+  },[window.outerWidth]);
+
+  const handleResize = () => {
+    if (window.outerWidth <= 768) {
+      setTickerTop(40);
+    } else {
+      setTickerTop(100);
+    }
+  }
 
   const createTickers = () => {
     return tickerString.split(',').map((str:any, i:number) => (
@@ -67,10 +79,10 @@ const Ticker = () => {
             <StyledTickerContainer 
               start={Math.floor(tickerWidth)} 
               ref={tickers[i]}
-              topLocation={i*100}
+              topLocation={i*tickerTop}
               reverse={i%2 === 0 ? true : false}
               key={i}
-              style={{animationDuration: 200 + (Math.random() * 200) + 'px'}}
+              style={{animationDuration: 300 + (Math.random() * 800) + 's'}}
             >
               {createTickers()}
             </StyledTickerContainer>

@@ -6,7 +6,6 @@ const eye = require('~/static/images/svg/eye.svg');
 
 const StyledEye = styled.div`
   grid-column: 6 / span 18;
-  height: 400px;
   img{
     display: block;
     width: 100%;
@@ -15,14 +14,18 @@ const StyledEye = styled.div`
   }   
 `;
 
+const StyledCapabilities = styled(Section)`
+  padding: 400px 0;
+`;
+
 const Capabilites = () => {
   return (
-    <Section>
+    <StyledCapabilities>
       <StyledEye>
         <Ticker/>
         <img src={eye} alt=""/>
       </StyledEye>
-    </Section>
+    </StyledCapabilities>
   )
 }
 

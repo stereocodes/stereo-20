@@ -32,15 +32,19 @@ const StyledLogo = styled(Logo)`
   }
 `;
 
+const StyledIntroSection = styled(Section)`
+  padding-top: 50px;
+`;
+
 const Intro = () => {
   return (
     <StyledIntro>
       <StyledLogo />
-      <Section label="Design Development Strategy" break>
+      <StyledIntroSection label="Design Development Strategy" break>
         <StyledIntroGraphic>
           <img src={keyhole} alt=""/>
         </StyledIntroGraphic>
-      </Section>
+      </StyledIntroSection>
     </StyledIntro>
   )
 }
