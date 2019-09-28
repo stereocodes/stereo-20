@@ -1,19 +1,45 @@
 import React from 'react';
 import Section from '../03_organisms/section';
 import WorkCard from '../03_organisms/workCard';
-const workThumb = require('~/static/images/content/work-thumbnail-hq.jpg');
+import styled from 'styled-components';
+import { work } from '../../store/work';
+
+const StyledColumn = styled.div`
+  & > div{
+    margin-bottom: 80px;
+    &:last-child{margin: 0;}
+  }
+`;
+
 const Work = () => {
+  const workContent = (data:any) => {
+    return data.map((col:any, i:number) => (
+      <StyledColumn 
+        style={
+          {
+            gridColumn: i !== 1 ? '6 / span 8' : '16 / span 8',
+            paddingTop: i === 1 ? '100' : '0'
+          }
+        }
+        key={i}
+      >
+        {
+          col.map((work:any, j:number) => (
+            <WorkCard 
+              title={work.title}
+              subTitle={work.subTitle}
+              bgColor={work.color}
+              bgImage={work.image}
+              key={j}
+            />
+          ))
+        }
+      </StyledColumn>
+    ))
+  }
   return (
     <Section label="Check it.">
-      <div style={{gridColumn: '6 / span 8'}}>
-        <WorkCard
-          title="HQ TRIVIA ACTION"
-          subTitle="Development / Strategy"
-          bgColor="#272A81"
-          bgImage={workThumb}
-        />
-      </div>
-      
+      {workContent(work)}
     </Section>
   )
 }
