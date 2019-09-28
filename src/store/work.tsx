@@ -19,19 +19,22 @@ export const work = [
       title: "APP CONCEPT",
       subTitle: "Design Study",
       color: "#9D2386",
-      image: workThumbApp
+      image: workThumbApp,
+      link: 'https://dribbble.com/shots/6300065-Fictional-App-Blue-Yellow'
     },
     {
       title: "STORE CMS",
       subTitle: "Design Study",
       color: "#251269",
-      image: workThumbBuykea
+      image: workThumbBuykea,
+      link: 'https://dribbble.com/shots/7006084-light-mode-store-interface'
     },
     {
       title: "Patagonia Mobile",
       subTitle: "Design Study",
       color: "#2F0808",
-      image: workThumbPatagonia
+      image: workThumbPatagonia,
+      link: 'https://dribbble.com/shots/7163876-patagonia-clothing-mobile'
     }
   ],
   [
@@ -45,7 +48,8 @@ export const work = [
       title: "TAROT ILLO",
       subTitle: "Design",
       color: "#0E0E0E",
-      image: workThumbTarot
+      image: workThumbTarot,
+      link: 'https://dribbble.com/shots/6897392-Tarot-style'
     },
     {
       title: "TWITCH GDC KIOSK",
