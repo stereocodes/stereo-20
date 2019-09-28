@@ -42,7 +42,7 @@ const StyledTickerContainer = styled.p`
 
 const tickerString = 'HTML5, css3, JS/17/18/Edge, PHP, Python, Ruby, XML, XSLT, Go, Drupal, Wordpress, Laravel, Zend FW, Django 1.x/2.x, Rails, Angular 1.x, Backbone, React, Underscore/lodash, Prototype(the web framework), Digital Ocean, Rackspace, AWS, EC2/S3/Lambda, GCP, Ubuntu, Apache, Nginx, Firebase, Dialogflow/Actions, CSSinJS, styled-components, BEM, Atomic Design/Development, PS, AI, Sketch, Phase, Invision Studio, Framer-x, Docker, Vagrant, Virtualenv, Pyenv';
 const Ticker = () => {
-  const tickersCount = 10;
+  const tickersCount = 12;
   const tickers = Array.from({length: tickersCount}, a => useRef(null));
   const [tickerWidth, setTickerWidth] = useState(0);
 

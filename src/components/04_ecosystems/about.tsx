@@ -36,15 +36,18 @@ const StyledAboutContainer = styled.div`
   }
 `;
 
+const StyledAboutSection = styled(Section)`
+  padding: 200px 0;
+`;
 
 const About = () => {
   return (
-    <Section label="Who Dis." color="var(--color-SECONDARY)">
+    <StyledAboutSection label="Who Dis." color="var(--color-SECONDARY)">
       <StyledAboutContainer>
         <p>This site and all it's works are a culmination of over 10 years of professional web development and design. I have built marketing sites, web apps, CLI's, custom frameworks, and servers. My knowledge spans the full gamut of web technology and then some. I have designed, strategized, coded, and deployed on the best of what the web has to offer. My experience ranges from Wordpress, Django, and React; to Sketch, Invision Studio, and Photoshop.</p>
         <img src={box} alt=""/>
       </StyledAboutContainer>
-    </Section>
+    </StyledAboutSection>
   )
 }
 

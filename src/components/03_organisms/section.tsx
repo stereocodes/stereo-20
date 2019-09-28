@@ -23,19 +23,20 @@ const StyledSection = styled.section`
 
 
 interface ISection {
-  label: string
+  label?: string
   break?: boolean
   color?: string
   children?: ReactNode
+  className?: string
 }
 
 const Section = (props: ISection) => {
   return (
-    <StyledSection color={props.color}>
-      <Header 
+    <StyledSection color={props.color} className={props.className}>
+      {props.label && <Header 
         break={props.break} 
         label={props.label}
-      />
+      />}
       {props.children}
     </StyledSection>
   )

@@ -11,6 +11,10 @@ const StyledColumn = styled.div`
   }
 `;
 
+const StyledWorkSection = styled(Section)`
+  padding-top: 200px;
+`;
+
 const Work = () => {
   const workContent = (data:any) => {
     return data.map((col:any, i:number) => (
@@ -39,9 +43,9 @@ const Work = () => {
     ))
   }
   return (
-    <Section label="Check it.">
+    <StyledWorkSection label="Check it.">
       {workContent(work)}
-    </Section>
+    </StyledWorkSection>
   )
 }
 
