@@ -24,6 +24,7 @@ const StyledTickerElement = styled.span`
 
 
 const tickerScrolling = (start:number, reverse:boolean) => {
+  console.log(start);
   const directionKeys = keyframes`
     0%{transform: translateX(${reverse ? start : 0}px);}
     50%{transform: translateX(${reverse ? 0 : start}px);}
@@ -52,14 +53,17 @@ const tickerString = 'HTML5, css3, JS/17/18/Edge, PHP, Python, Ruby, XML, XSLT, 
 const Ticker = () => {
   const tickersCount = 12;
   const tickers = Array.from({length: tickersCount}, a => useRef(null));
-  const [tickerWidth, setTickerWidth] = useState(window.outerWidth);
+  const [tickerWidth, setTickerWidth] = useState(12000);
   const [tickerTop, setTickerTop] = useState(100);
 
   useEffect(() => {
-    const theWidth = tickers[0].current.offsetWidth - window.outerWidth;
-    setTickerWidth(-theWidth)
-    window.addEventListener('resize', debounce(handleResize, 100))
-  },[window.outerWidth]);
+    setTimeout(() => {
+      const theWidth = tickers[0].current.offsetWidth - window.outerWidth;
+      setTickerWidth(-theWidth)
+    }, 500);
+    handleResize();
+    window.addEventListener('resize', debounce(handleResize, 100));
+  },[]);
 
   const handleResize = () => {
     if (window.outerWidth <= 768) {
