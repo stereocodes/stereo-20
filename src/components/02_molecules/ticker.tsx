@@ -1,6 +1,8 @@
 import React,{useEffect, useRef, useState} from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import debounce from 'lodash/debounce';
+import {shuffle} from '../../lib/shuffle';
+
 
 const StyledTickerElement = styled.span`
   text-transform: uppercase;
@@ -64,7 +66,7 @@ const Ticker = () => {
   }
 
   const createTickers = () => {
-    return tickerString.split(',').map((str:any, i:number) => (
+    return shuffle(tickerString.split(',')).map((str:any, i:number) => (
       <StyledTickerElement key={i}>
         {str}
       </StyledTickerElement>
@@ -82,7 +84,7 @@ const Ticker = () => {
               topLocation={i*tickerTop}
               reverse={i%2 === 0 ? true : false}
               key={i}
-              style={{animationDuration: 300 + (Math.random() * 800) + 's'}}
+              style={{animationDuration: 300 + (Math.random() * 1200) + 's'}}
             >
               {createTickers()}
             </StyledTickerContainer>
