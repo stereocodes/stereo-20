@@ -13,6 +13,7 @@ const StyledWorkCard = styled.div`
   background-position: bottom center;
   background-size: contain;
   position:relative;
+  cursor: pointer;
   h3{
     font-family: 'glacial', sans-serif;
     text-transform: uppercase;
