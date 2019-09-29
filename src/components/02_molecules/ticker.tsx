@@ -13,6 +13,10 @@ const StyledTickerElement = styled.span`
   display: block;
   padding: 0 20px;
   opacity: .1;
+  transition: all 2s;
+  &.active{
+    opacity: 1;
+  }
   @media screen and (max-width: 768px) {
     font-size: 5.0rem;
   }
@@ -71,6 +75,30 @@ const Ticker = () => {
         {str}
       </StyledTickerElement>
     ))
+  }
+
+  useEffect(() => {
+    window.setInterval(updateTickers, 5000);
+  }, []);
+
+  const updateTickers = () => {
+    for (let ticker of tickers) {      
+      const tickerChildren = ticker.current.children;
+      let childrenSelect = [];
+
+      for(let tickerElement of tickerChildren) {
+        const whereElement = tickerElement.getBoundingClientRect().left;
+
+        tickerElement.classList.remove('active');
+
+        if (whereElement <= window.outerWidth && whereElement >= 0) {
+          childrenSelect.push(tickerElement);
+        }
+      }
+
+      let randomChild = Math.floor(Math.random() * childrenSelect.length);
+      childrenSelect[randomChild].classList.add('active')
+    }
   }
 
   return (
