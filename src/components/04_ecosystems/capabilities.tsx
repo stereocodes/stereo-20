@@ -12,10 +12,16 @@ const StyledEye = styled.div`
     position: relative;
     z-index: 1;
   }   
+  @media screen and (max-width: 768px) {
+    grid-column: 1 / span 28;
+  }
 `;
 
 const StyledCapabilities = styled(Section)`
   padding: 400px 0;
+  @media screen and (max-width: 768px) {
+    padding: 150px 0;
+  }
 `;
 
 const Capabilites = () => {
