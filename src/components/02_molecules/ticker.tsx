@@ -91,13 +91,17 @@ const Ticker = () => {
 
         tickerElement.classList.remove('active');
 
-        if (whereElement <= window.outerWidth && whereElement >= 0) {
+        if (whereElement <= (window.outerWidth - tickerElement.offsetWidth) && whereElement >= 0) {
           childrenSelect.push(tickerElement);
         }
       }
 
       let randomChild = Math.floor(Math.random() * childrenSelect.length);
-      childrenSelect[randomChild].classList.add('active')
+      
+      if (childrenSelect.length) {
+        childrenSelect[randomChild].classList.add('active')
+      }
+      
     }
   }
 
