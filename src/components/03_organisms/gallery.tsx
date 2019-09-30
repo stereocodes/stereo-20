@@ -1,4 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { 
+  useEffect, 
+  useState, 
+  useRef,
+  useReducer
+} from 'react';
 import styled from 'styled-components';
 import GallerySlide from '../01_atoms/GallerySlide';
 
@@ -21,14 +26,14 @@ const Gallery = () => {
   let timer = null;
   const [slideIndex,setSlideIndex] = useState(0);
   const [playState,setPlayState] = useState(false);
+  const galleryRef = useRef(null);
 
   function nextSlide() {
-    const newSlideIndex = slide + 1 > images.length - 1 ? 0 : slide + 1;
+    const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
     // update slides and setup default slides after
     const timer = setTimeout(() => {
-      if (ReactDOM.findDOMNode(this.refs.gallery).querySelector('.out')) {
-        ReactDOM
-        .findDOMNode(this.refs.gallery)
+      if (galleryRef.current.querySelector('.out')) {
+        galleryRef.current
         .querySelector('.out')
         .classList
         .remove('out');
@@ -40,7 +45,7 @@ const Gallery = () => {
   }
 
   return (
-    <StyledGallery className={`${classes} gallery grid-col-6`} ref="gallery" play={play}>
+    <StyledGallery className={`${classes} gallery grid-col-6`} ref={galleryRef} play={play}>
       { this.getSlides(this.state.slide) }
     </StyledGallery>
   )
@@ -51,27 +56,11 @@ Gallery.defaultProps = {
   play: false,
 }
 
+export default Gallery;
 
-class Gallery extends Component {
+class _Gallery extends Component {
 
-  nextSlide() {
-    const { images } = this.props;
-    const { slide } = this.state;
-    const newSlideIndex = slide + 1 > images.length - 1 ? 0 : slide + 1;
-    // update slides and setup default slides after
-    const timer = setTimeout(() => {
-      if (ReactDOM.findDOMNode(this.refs.gallery).querySelector('.out')) {
-        ReactDOM
-        .findDOMNode(this.refs.gallery)
-        .querySelector('.out')
-        .classList
-        .remove('out');
-      }
-      clearTimeout(timer);
-    }, 700);
-
-    this.setState({ slide: newSlideIndex, });
-  }
+  
 
   getSlides(slide) {
     const { images } = this.props;
@@ -129,12 +118,6 @@ class Gallery extends Component {
 
 
 
-const mapStateToProps = (state) => {
-  return {
-    images: state.gallery,
-  }
-}
-
 const StyledGallery = styled.aside`
   position: relative;
   display: block;
@@ -148,7 +131,4 @@ const StyledGallery = styled.aside`
   transition-delay: ${props => props.play ? '1s' : '0s'}
 `;
 
-export default connect(
-  mapStateToProps,
-  null
-)(Gallery)
+
