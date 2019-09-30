@@ -5,6 +5,7 @@ import Capabilites from './04_ecosystems/capabilities';
 import Work from './04_ecosystems/work';
 import {createGlobalStyle} from 'styled-components';
 import '../static/fonts/fonts.css';
+import Modal from './03_organisms/modal';
 
 const CSSGlobals = createGlobalStyle`
   :root{
@@ -29,6 +30,13 @@ const CSSGlobals = createGlobalStyle`
     background: var(--color-PRIMARY);
     overflow-x: hidden;
   }
+  h1,h2,h3{
+    font-family: 'glacial', sans-serif;
+  }
+  h4,h5,h6{font-family: 'nunito', sans-serif;}
+  p{
+    font-family: 'nunito', sans-serif;
+  }
 `;
 
 const App = () => {
@@ -39,6 +47,7 @@ const App = () => {
       <About />
       <Capabilites />
       <Work />
+      <Modal />
     </>
   )
 }

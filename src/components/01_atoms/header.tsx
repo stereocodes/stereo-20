@@ -27,6 +27,7 @@ const StyledHeader = styled.h1`
 interface IHeader {
   label: string
   break?: boolean
+  className?: string
 }
 
 const Header = (props: IHeader) => {
@@ -34,7 +35,7 @@ const Header = (props: IHeader) => {
     return label.split(' ').map((str, i) => (<span key={i}>{str}</span>));
   }
   return (
-    <StyledHeader>{props.break ? breakAll(props.label) : props.label}</StyledHeader>
+    <StyledHeader className={props.className}>{props.break ? breakAll(props.label) : props.label}</StyledHeader>
   )
 }
 
