@@ -26,7 +26,7 @@ const StyledSVG = styled.svg`
     stroke: var(--color-PRIMARY);
     stroke-width: 2;
     font-size: 15.0rem;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     fill: none;
     fill-rule: evenodd;
     fill-opacity: 0;
@@ -34,6 +34,7 @@ const StyledSVG = styled.svg`
 `;
 
 const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
+  let resizeListener:any = null;
   const textRef = useRef(null);
   const svgRef = useRef(null);
   const [viewBoxRect, setViewBoxRect] = useState({w: 0, h: 0, x: 0, y:0});
@@ -41,11 +42,20 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
   
   useEffect(() => {
     const textBBox = textRef.current.getBBox();
+    
+    setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y});
+    getParentWidth();
+    resizeListener = window.addEventListener('resize', getParentWidth);
+    () => {
+      window.removeEventListener('resize', resizeListener);
+    }
+  }, [])
+
+  function getParentWidth() {
     const parentWidth = svgRef.current.parentNode.clientWidth;
 
     setParentWidth(parentWidth);
-    setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y})
-  }, [])
+  }
 
   return (
     <StyledSVG
