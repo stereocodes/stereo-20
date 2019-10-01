@@ -11,5 +11,6 @@ export const zdepth = (level:string) => {
     high: 3,
     highest: 4
   }
+  //@ts-ignore
   return depth[level];
 }

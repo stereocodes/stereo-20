@@ -15,7 +15,7 @@ interface IStyledSlide {
 const StyledSlide = styled.div`
   position: absolute;
   top: 0;
-  left: 25%;
+  left: 30%;
   height: 100%;
   width: 80%;
   border-radius: 5px;
@@ -23,11 +23,12 @@ const StyledSlide = styled.div`
   opacity: 0;
   background-size: cover;
   background-position: center;
-  transform: scale(.8) translate3d(0,0,0);
+  transform: scale(.6) translate3d(0,0,0);
   transition: all .8s;
-  z-index: ${zdepth('low')};
+  z-index: ${zdepth('lowest')};
   pointer-events: none;
-  background-image: ${(p:IStyledSlide) => p.image};
+  background-image: url(${(p:IStyledSlide) => p.image});
+  transition-duration: 0s;
   &:before{
     content: '';
     position: absolute;
@@ -43,8 +44,9 @@ const StyledSlide = styled.div`
   &.out{
     left: -10%;
     opacity: 0;
-    z-index: ${zdepth('high')};
+    z-index: 99;
     transform: scale(1.1) translate3d(0,0,0);
+    transition-duration: .8s;
   }
   &.current{
     left: 0;
@@ -53,6 +55,7 @@ const StyledSlide = styled.div`
     transform: scale(1) translate3d(0,0,0);
     box-shadow: 10px 10px 30px rgba(0,0,0,.3);
     &:before{ opacity: 0; }
+    transition-duration: .8s;
   }
   &.next{
     left: 10%;
@@ -61,13 +64,15 @@ const StyledSlide = styled.div`
     transform: scale(.9) translate3d(0,0,0);
     z-index: ${zdepth('mid')};
     &:before{ opacity: .4; }
+    transition-duration: .8s;
   }
   &.last{
     left: 20%;
     opacity: 1;
     transform: scale(.8) translate3d(0,0,0);
-    z-index: ${zdepth('lowest')};
+    z-index: ${zdepth('low')};
     &:before{ opacity: .8; }
+    transition-duration: .8s;
   }
 `;
 
@@ -75,15 +80,16 @@ const GallerySlide = (props: IGallerySlide) => {
   const slideRef = useRef(null);
 
   useEffect(() => {
+    
     if (props.slideState === 4) {
       setTimeout(() => {
         slideRef.current.classList.remove('out');
-      }, 200);
+      }, 1000);
     }
   },[props.slideState]);
 
 
-  function getClasses(index) {
+  function getClasses(index:number) {
     switch(index) {
       case 1:
         return 'current';
@@ -97,7 +103,7 @@ const GallerySlide = (props: IGallerySlide) => {
         return '';
     }
   }
-
+  console.log(getClasses(props.slideState));
   return (
     <StyledSlide
       className={`slide ${getClasses(props.slideState)}`}
