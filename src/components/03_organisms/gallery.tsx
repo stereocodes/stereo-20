@@ -6,12 +6,13 @@ import React, {
 } from 'react';
 import styled from 'styled-components';
 import GallerySlide from '../01_atoms/gallerySlide';
-
+import GalleryBrandLabel from '../01_atoms/galleryBrandLabel';
 
 interface IGallery {
   classes: string
   images: string[]
   play: boolean
+  label: string
 }
 
 interface IStyledGallery {
@@ -95,6 +96,7 @@ const Gallery = (props: IGallery) => {
 
   return (
     <StyledGallery className={`${props.classes} gallery grid-col-6`} ref={galleryRef} play={playState}>
+      <GalleryBrandLabel label={props.label}/>
       { getSlides(slideIndex) }
     </StyledGallery>
   )

@@ -31,8 +31,12 @@ const CSSGlobals = createGlobalStyle`
     background: var(--color-PRIMARY);
     overflow-x: hidden;
   }
+  h1{
+    font-size: 14.0rem;
+  }
   h1,h2,h3{
     font-family: 'glacial', sans-serif;
+    text-transform:uppercase;
   }
   h4,h5,h6{font-family: 'nunito', sans-serif;}
   p{
