@@ -18,7 +18,6 @@ const StyledSlide = styled.div`
   left: 30%;
   height: 100%;
   width: 80%;
-  border-radius: 5px;
   overflow: hidden;
   opacity: 0;
   background-size: cover;
@@ -38,11 +37,11 @@ const StyledSlide = styled.div`
     height: 110%;
     width: 110%;
     opacity: 1;
-    background: rgb(var(--snow));
+    background: var(--color-SECONDARY);
     transition: all .8s;
   }
   &.out{
-    left: -10%;
+    left: 0;
     opacity: 0;
     z-index: 99;
     transform: scale(1.1) translate3d(0,0,0);
@@ -53,14 +52,14 @@ const StyledSlide = styled.div`
     z-index: ${zdepth('high')};
     opacity: 1;
     transform: scale(1) translate3d(0,0,0);
-    box-shadow: 10px 10px 30px rgba(0,0,0,.3);
+    /* box-shadow: 10px 10px 30px rgba(0,0,0,.3); */
     &:before{ opacity: 0; }
     transition-duration: .8s;
   }
   &.next{
     left: 10%;
     opacity: 1;
-    box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+    /* box-shadow: 10px 10px 30px rgba(0,0,0,.1); */
     transform: scale(.9) translate3d(0,0,0);
     z-index: ${zdepth('mid')};
     &:before{ opacity: .4; }

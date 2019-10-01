@@ -6,11 +6,7 @@ import Work from './04_ecosystems/work';
 import {createGlobalStyle} from 'styled-components';
 import '../static/fonts/fonts.css';
 import Modal from './03_organisms/modal';
-import Gallery from './03_organisms/gallery';
-const image1 = require('~/static/images/content/work-thumbnail-hq.jpg');
-const image2 = require('~/static/images/content/work-thumbnail-tarot.jpg');
-const image3 = require('~/static/images/content/work-thumbnail-stereo.jpg');
-const image4 = require('~/static/images/content/work-thumbnail-spotify.jpg');
+
 
 const CSSGlobals = createGlobalStyle`
   :root{
@@ -52,8 +48,8 @@ const App = () => {
       <About />
       <Capabilites />
       <Work />
-      {/* <Modal /> */}
-      <Gallery play={true} images={[image1, image2, image3, image4]}/>
+      <Modal />
+      
     </>
   )
 }

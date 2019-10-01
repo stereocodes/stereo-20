@@ -22,7 +22,7 @@ const StyledGallery = styled.aside`
   position: relative;
   display: block;
   align-items: stretch;
-  height: 450px;
+  height: 700px;
   padding: 20px;
   width: 100%;
   transform: translate3d(0,0,0);
@@ -48,7 +48,6 @@ const Gallery = (props: IGallery) => {
   function nextSlide() {
     
     const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
-
     // update slides and setup default slides after
     const timerOut = setTimeout(() => {
       if (galleryRef.current.querySelector('.out')) {
