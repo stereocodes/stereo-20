@@ -1,4 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
 
@@ -9,6 +10,7 @@ interface IGalleryBrandLabel {
 interface IStyledSVG {
   swidth: number
   sheight: number
+  pwidth:number
 }
 
 const StyledSVG = styled.svg`
@@ -17,7 +19,7 @@ const StyledSVG = styled.svg`
   top: calc(50% - ${(p:IStyledSVG) => p.sheight / 2}px);
   left: calc(50% - ${(p:IStyledSVG) => p.swidth / 2}px);
   transform-origin: center center;
-  transform: rotate(-90deg) translateY(-100%);
+  transform: rotate(-90deg) translateY(-${(p:IStyledSVG) => p.pwidth / 2}px);
   text{
     font-family: 'glacial', sans-serif;
     text-transform: uppercase;
@@ -33,10 +35,15 @@ const StyledSVG = styled.svg`
 
 const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
   const textRef = useRef(null);
+  const svgRef = useRef(null);
   const [viewBoxRect, setViewBoxRect] = useState({w: 0, h: 0, x: 0, y:0});
+  const [parentWidth, setParentWidth] = useState(0);
   
   useEffect(() => {
     const textBBox = textRef.current.getBBox();
+    const parentWidth = svgRef.current.parentNode.clientWidth;
+
+    setParentWidth(parentWidth);
     setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y})
   }, [])
 
@@ -46,10 +53,12 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
       height={viewBoxRect.h}
       swidth={viewBoxRect.w}
       sheight={viewBoxRect.h}
+      pwidth={parentWidth}
       viewBox={`0 0 ${viewBoxRect.w} ${viewBoxRect.h}`}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      ref={svgRef}
     >      
       <g width={viewBoxRect.w} height={viewBoxRect.h}>
         <text
