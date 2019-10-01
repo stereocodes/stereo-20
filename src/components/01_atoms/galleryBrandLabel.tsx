@@ -22,6 +22,12 @@ const StyledSVG = styled.svg`
     font-family: 'glacial', sans-serif;
     text-transform: uppercase;
     stroke: var(--color-PRIMARY);
+    stroke-width: 2;
+    font-size: 15.0rem;
+    letter-spacing: 10px;
+    fill: none;
+    fill-rule: evenodd;
+    fill-opacity: 0;
   }
 `;
 
@@ -33,6 +39,7 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
     const textBBox = textRef.current.getBBox();
     setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y})
   }, [])
+
   return (
     <StyledSVG
       width={viewBoxRect.w}
@@ -49,13 +56,6 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
           ref={textRef}
           x="0"
           y={viewBoxRect.y * -1}
-          strokeWidth="2"
-          fill="none"
-          fillRule="evenodd"
-          fillOpacity="0"
-          fontSize="150"
-          fontWeight="bold"
-          letterSpacing="10"
         >
             {props.label}
         </text>
