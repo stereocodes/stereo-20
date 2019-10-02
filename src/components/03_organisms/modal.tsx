@@ -45,7 +45,7 @@ const StyledSection = styled(Section)`
     grid-column: 4 / span 10;
   }
   div:last-child{
-    grid-column: 16 / span 10;
+    grid-column: 17 / span 10;
   }
 `;
 
