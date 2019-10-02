@@ -15,19 +15,20 @@ interface IStyledSlide {
 const StyledSlide = styled.div`
   position: absolute;
   top: 0;
-  left: 30%;
+  left:40%;
   height: 100%;
   width: 80%;
-  overflow: hidden;
+  /* overflow: hidden; */
   opacity: 0;
   background-size: cover;
   background-position: center;
-  transform: scale(.6) translate3d(0,0,0);
+  transform: scale(.8) translate3d(0,0,0);
   transition: all .8s;
   z-index: ${zdepth('lowest')};
   pointer-events: none;
   background-image: url(${(p:IStyledSlide) => p.image});
   transition-duration: 0s;
+
   &:before{
     content: '';
     position: absolute;
@@ -39,13 +40,15 @@ const StyledSlide = styled.div`
     opacity: 1;
     background: var(--color-SECONDARY);
     transition: all .8s;
+    
   }
   &.out{
-    left: -15%;
+    left: -100%;
     opacity: 0;
     z-index: 99;
-    transform: scale(1.1) translate3d(0,0,0);
+    transform: scale(1) translate3d(0,0,0);
     transition-duration: .8s;
+    transition-delay: 0s;
   }
   &.current{
     left: 0;
@@ -55,23 +58,26 @@ const StyledSlide = styled.div`
     /* box-shadow: 10px 10px 30px rgba(0,0,0,.3); */
     &:before{ opacity: 0; }
     transition-duration: .8s;
+    transition-delay: .2s;
   }
   &.next{
-    left: 10%;
+    left: 100%;
     opacity: 1;
     /* box-shadow: 10px 10px 30px rgba(0,0,0,.1); */
-    transform: scale(.9) translate3d(0,0,0);
+    transform: scale(1) translate3d(0,0,0);
     z-index: ${zdepth('mid')};
-    &:before{ opacity: .4; }
+    &:before{ opacity: 0; }
     transition-duration: .8s;
+    transition-delay: .4s;
   }
   &.last{
-    left: 20%;
+    left: 200%;
     opacity: 1;
-    transform: scale(.8) translate3d(0,0,0);
+    transform: scale(1) translate3d(0,0,0);
     z-index: ${zdepth('low')};
-    &:before{ opacity: .8; }
+    &:before{ opacity: 0; }
     transition-duration: .8s;
+
   }
 `;
 

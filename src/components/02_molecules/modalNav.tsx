@@ -23,6 +23,9 @@ const StyledNav = styled.nav`
     align-items: center;
     h3{
       grid-column: 2 / span 10;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
     a{
       grid-column: 27;
