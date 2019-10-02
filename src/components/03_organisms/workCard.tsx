@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components';
-
+import {modalContext} from '../../context/modalContext';
 
 interface IStyledWorkCard {
   backgroundColor: string
@@ -48,9 +48,12 @@ interface IWorkCard {
 }
 
 const WorkCard = (props:IWorkCard) => {
+  const {setModalContextState} = useContext(modalContext);
   const openWork = (e:any) => {
     if (props.link) {
       window.open(props.link, '_blank')
+    } else {
+      setModalContextState(true);
     }
     e.preventDefault();
   }

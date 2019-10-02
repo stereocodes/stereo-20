@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components';
 import Header from '../01_atoms/header';
 import Gallery from './gallery';
 import Section from './section';
 import ModalNav from '../02_molecules/modalNav';
 import { string } from 'prop-types';
+import {modalContext} from '../../context/modalContext';
+
+
 const image1 = require('~/static/images/content/work-thumbnail-hq.jpg');
 const image2 = require('~/static/images/content/work-thumbnail-tarot.jpg');
 const image3 = require('~/static/images/content/work-thumbnail-stereo.jpg');
 const image4 = require('~/static/images/content/work-thumbnail-spotify.jpg');
 
-
+interface IStyledModal {
+  open: boolean
+}
 
 const StyledModal = styled.div`
   position:fixed;
@@ -22,6 +27,9 @@ const StyledModal = styled.div`
   z-index: 1;
   color: var(--color-PRIMARY);
   overflow: scroll;
+  opacity: ${(p:IStyledModal) => p.open ? '1' : '0'};
+  pointer-events: ${(p:IStyledModal) => p.open ? 'auto' : 'none'};
+  transition: all .5s;
   p{
     font-family: 'nunito', sans-serif;
     font-size: 1.6rem;
@@ -70,9 +78,10 @@ interface IModal {
 }
 
 const Modal = (props:IModal) => {
+  const {modalContextState, setModalContextState} = useContext(modalContext);
   return (
-    <StyledModal>
-      <ModalNav brand="TWITCH" callback={() => console.log('clicked')}/>
+    <StyledModal open={modalContextState}>
+      <ModalNav brand="TWITCH" callback={() => setModalContextState(false)}/>
       <StyledSection color="var(--color-SECONDARY)">
         <div>
           <StyledModalHeader label="GDC Interactive Kiosk" break/>

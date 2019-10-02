@@ -6,7 +6,7 @@ import Work from './04_ecosystems/work';
 import {createGlobalStyle} from 'styled-components';
 import '../static/fonts/fonts.css';
 import Modal from './03_organisms/modal';
-
+import ModalContextProvider from '../context/modalContext';
 
 const CSSGlobals = createGlobalStyle`
   :root{
@@ -46,15 +46,16 @@ const CSSGlobals = createGlobalStyle`
 
 const App = () => {
   return (
-    <>
+    <ModalContextProvider>
+
       <CSSGlobals />
       <Intro />
       <About />
       <Capabilites />
       <Work />
       <Modal />
-      
-    </>
+
+    </ModalContextProvider>
   )
 }
 

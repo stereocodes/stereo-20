@@ -15,7 +15,7 @@ interface IStyledSlide {
 const StyledSlide = styled.div`
   position: absolute;
   top: 0;
-  left:40%;
+  left:100%;
   height: 100%;
   width: 80%;
   /* overflow: hidden; */
@@ -28,7 +28,6 @@ const StyledSlide = styled.div`
   pointer-events: none;
   background-image: url(${(p:IStyledSlide) => p.image});
   transition-duration: 0s;
-
   &:before{
     content: '';
     position: absolute;
@@ -40,7 +39,6 @@ const StyledSlide = styled.div`
     opacity: 1;
     background: var(--color-SECONDARY);
     transition: all .8s;
-    
   }
   &.out{
     left: -100%;

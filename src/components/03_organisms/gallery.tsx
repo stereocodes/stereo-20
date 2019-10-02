@@ -40,7 +40,7 @@ const Gallery = (props: IGallery) => {
 
   useEffect(() => {
     clearTimeout(timer);
-    timer = setTimeout(nextSlide, 3000);
+    timer = setTimeout(nextSlide, 4000);
     () => {
       clearInterval(timer);
     }
