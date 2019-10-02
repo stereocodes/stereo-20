@@ -55,7 +55,7 @@ const App = () => {
   const {modalContextState} = useContext(modalContext)
   return (
     <ModalContextProvider>
-      <StyledMain modalOpen={modalContextState}>
+      <StyledMain modalOpen={modalContextState.open}>
         <CSSGlobals />
         <Intro />
         <About />

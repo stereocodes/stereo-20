@@ -36,12 +36,14 @@ const Work = () => {
               bgImage={work.image}
               link={work.link ? work.link : null}
               key={j}
+              id={work.workId}
             />
           ))
         }
       </StyledColumn>
     ))
   }
+  console.log('wtf');
   return (
     <StyledWorkSection label="Check it.">
       {workContent(work)}

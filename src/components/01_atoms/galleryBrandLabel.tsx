@@ -41,19 +41,18 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
   const [parentWidth, setParentWidth] = useState(0);
   
   useEffect(() => {
-    const textBBox = textRef.current.getBBox();
-    
-    setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y});
     getParentWidth();
     resizeListener = window.addEventListener('resize', getParentWidth);
     () => {
       window.removeEventListener('resize', resizeListener);
     }
-  }, [])
+  }, [props.label])
 
   function getParentWidth() {
     const parentWidth = svgRef.current.parentNode.clientWidth;
-
+    const textBBox = textRef.current.getBBox();
+    console.log(textBBox);
+    setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y});
     setParentWidth(parentWidth);
   }
 
@@ -74,7 +73,7 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
         <text
           ref={textRef}
           x="0"
-          y={viewBoxRect.y * -1}
+          y="130"
         >
             {props.label}
         </text>

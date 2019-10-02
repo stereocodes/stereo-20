@@ -6,7 +6,8 @@ import Section from './section';
 import ModalNav from '../02_molecules/modalNav';
 import { string } from 'prop-types';
 import {modalContext} from '../../context/modalContext';
-
+import {work} from '../../store/work';
+import ReactHtmlParser from 'react-html-parser';
 
 const image1 = require('~/static/images/content/work-thumbnail-hq.jpg');
 const image2 = require('~/static/images/content/work-thumbnail-tarot.jpg');
@@ -79,22 +80,28 @@ interface IModal {
 
 const Modal = (props:IModal) => {
   const {modalContextState, setModalContextState} = useContext(modalContext);
+
+  function selectedWork():any {
+    return work
+    .filter((item:any) => item.filter((subItem:any) => subItem.workId === modalContextState.id).length)[0]
+    .filter((item:any) => item.workId === modalContextState.id)[0];
+  }
+
   return (
-    <StyledModal open={modalContextState}>
-      <ModalNav brand="TWITCH" callback={() => setModalContextState(false)}/>
+    <StyledModal open={modalContextState.open}>
+      <ModalNav brand="TWITCH" callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
       <StyledSection color="var(--color-SECONDARY)">
         <div>
-          <StyledModalHeader label="GDC Interactive Kiosk" break/>
+          <StyledModalHeader label={selectedWork().title} break/>
           <div>
-            <p>A large scale multitouch interactive kiosk to educate streamers on the Twitch platform. The kiosk technology consisted of a React/Electron application deployed to work on a windows PC to be interacted with on multiple 60 inch capacitive touch displays. The application being a single piece of software could be separated into three different experiences to educate the streamer along the three main topics of development, launch, and live.</p>
-            <p>The displays were showcased at the Game Developers Conference(GDC) in San Francisco in March of this year(2019). As I was the sole developer of the application I was sent to the conference to assist Twitch in any issues and to help in a successful launch of the application to booth displays.</p>
+            {ReactHtmlParser(selectedWork().copy)}
           </div>
         </div>
         <div>
           <Gallery
-            label="TWITCH"
+            label={selectedWork().brand}
             play={true}
-            images={[image1, image2, image3, image4]}
+            images={selectedWork().slides}
           />
         </div>
       </StyledSection>

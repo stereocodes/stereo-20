@@ -24,7 +24,6 @@ const StyledTickerElement = styled.span`
 
 
 const tickerScrolling = (start:number, reverse:boolean) => {
-  console.log(start);
   const directionKeys = keyframes`
     0%{transform: translateX(${reverse ? start : 0}px);}
     50%{transform: translateX(${reverse ? 0 : start}px);}

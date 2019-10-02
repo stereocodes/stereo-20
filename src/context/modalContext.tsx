@@ -7,12 +7,12 @@ interface IModalContextProvider {
 
 
 export const modalContext = React.createContext({
-  modalContextState: false,
-  setModalContextState: (open:boolean) => {}
+  modalContextState: {open: false, id: 0},
+  setModalContextState: (obj:any) => {}
 });
 
 function ModalContextProvider(props: IModalContextProvider) {
-  const [modalContextState, setModalContextState] = useState(false);
+  const [modalContextState, setModalContextState] = useState({open: false, id: 0});
   return (
     <modalContext.Provider value={{modalContextState, setModalContextState}}>
       {props.children}

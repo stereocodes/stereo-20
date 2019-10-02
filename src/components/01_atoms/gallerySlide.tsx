@@ -18,7 +18,6 @@ const StyledSlide = styled.div`
   left:100%;
   height: 100%;
   width: 80%;
-  /* overflow: hidden; */
   opacity: 0;
   background-size: cover;
   background-position: center;
@@ -105,7 +104,6 @@ const GallerySlide = (props: IGallerySlide) => {
         return '';
     }
   }
-  console.log(getClasses(props.slideState));
   return (
     <StyledSlide
       className={`slide ${getClasses(props.slideState)}`}

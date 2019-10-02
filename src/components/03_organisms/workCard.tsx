@@ -45,15 +45,18 @@ interface IWorkCard {
   bgColor: string
   bgImage: string
   link?: string
+  id?:number
 }
 
 const WorkCard = (props:IWorkCard) => {
   const {setModalContextState} = useContext(modalContext);
+  
   const openWork = (e:any) => {
     if (props.link) {
       window.open(props.link, '_blank')
     } else {
-      setModalContextState(true);
+      console.log(props.id);
+      setModalContextState({open: true, id: props.id});
     }
     e.preventDefault();
   }
