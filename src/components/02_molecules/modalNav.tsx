@@ -16,7 +16,10 @@ const StyledNav = styled.nav`
   z-index: 1;
   width: 100%;
   padding: 30px 0;
-  background: var(--color-SECONDARY);
+  background: none;
+  @media screen and (max-width: 1000px) {
+    background: var(--color-SECONDARY);
+  }
   & > div{
     display: grid;
     grid-template-columns: repeat(28, 1fr);

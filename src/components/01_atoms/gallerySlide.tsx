@@ -25,7 +25,6 @@ const StyledSlide = styled.div`
   transform: scale(.8) translate3d(0,0,0);
   transition: all .8s;
   z-index: ${zdepth('lowest')};
-  pointer-events: none;
   background-image: url(${(p:IStyledSlide) => p.image});
   transition-duration: 0s;
   &:before{

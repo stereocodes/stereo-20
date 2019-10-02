@@ -26,7 +26,7 @@ const StyledModal = styled.div`
   background: var(--color-SECONDARY);
   z-index: 1;
   color: var(--color-PRIMARY);
-  overflow: scroll;
+  overflow-y: auto;
   opacity: ${(p:IStyledModal) => p.open ? '1' : '0'};
   pointer-events: ${(p:IStyledModal) => p.open ? 'auto' : 'none'};
   transition: all .5s;
