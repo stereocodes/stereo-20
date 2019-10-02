@@ -41,7 +41,7 @@ const StyledSlide = styled.div`
     transition: all .8s;
   }
   &.out{
-    left: 0;
+    left: -15%;
     opacity: 0;
     z-index: 99;
     transform: scale(1.1) translate3d(0,0,0);

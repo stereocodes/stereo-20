@@ -3,11 +3,14 @@ import styled from 'styled-components';
 import Header from '../01_atoms/header';
 import Gallery from './gallery';
 import Section from './section';
+import ModalNav from '../02_molecules/modalNav';
 import { string } from 'prop-types';
 const image1 = require('~/static/images/content/work-thumbnail-hq.jpg');
 const image2 = require('~/static/images/content/work-thumbnail-tarot.jpg');
 const image3 = require('~/static/images/content/work-thumbnail-stereo.jpg');
 const image4 = require('~/static/images/content/work-thumbnail-spotify.jpg');
+
+
 
 const StyledModal = styled.div`
   position:fixed;
@@ -36,16 +39,25 @@ const StyledModalHeader = styled(Header)`
   span{
     text-align: left;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 5.0rem;
+    line-height: 50px;
+  }
 `;
 
 const StyledSection = styled(Section)`
-  padding: 80px 0;
+  padding-top: 120px;
+  padding-bottom:80px;
   align-items: center;
   div:first-child{
     grid-column: 4 / span 10;
   }
   div:last-child{
-    grid-column: 17 / span 10;
+    grid-column: 18 / span 10;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 100px 20px;
   }
 `;
 
@@ -60,6 +72,7 @@ interface IModal {
 const Modal = (props:IModal) => {
   return (
     <StyledModal>
+      <ModalNav brand="TWITCH" callback={() => console.log('clicked')}/>
       <StyledSection color="var(--color-SECONDARY)">
         <div>
           <StyledModalHeader label="GDC Interactive Kiosk" break/>
