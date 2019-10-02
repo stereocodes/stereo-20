@@ -86,7 +86,7 @@ const Modal = (props:IModal) => {
     .filter((item:any) => item.filter((subItem:any) => subItem.workId === modalContextState.id).length)[0]
     .filter((item:any) => item.workId === modalContextState.id)[0];
   }
-
+  console.log(modalContextState.open);
   return (
     <StyledModal open={modalContextState.open}>
       <ModalNav brand="TWITCH" callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
@@ -98,11 +98,15 @@ const Modal = (props:IModal) => {
           </div>
         </div>
         <div>
-          <Gallery
-            label={selectedWork().brand}
-            play={true}
-            images={selectedWork().slides}
-          />
+          {
+            modalContextState.open && 
+            <Gallery
+              label={selectedWork().brand}
+              play={true}
+              images={selectedWork().slides}
+            />
+          }
+          
         </div>
       </StyledSection>
     </StyledModal>

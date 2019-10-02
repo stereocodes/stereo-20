@@ -67,7 +67,7 @@ export const work = [
     },
     {
       workId:2,
-      title: "TWITCH GDC KIOSK",
+      title: "GDC TWITCH KIOSK",
       brand: "TWITCH",
       subTitle: "Development / Strategy",
       color: "#54348F",

@@ -2,11 +2,13 @@ import React, {
   useEffect, 
   useState, 
   useRef,
-  useReducer
+  useReducer,
+  useContext
 } from 'react';
 import styled from 'styled-components';
 import GallerySlide from '../01_atoms/gallerySlide';
 import GalleryBrandLabel from '../01_atoms/galleryBrandLabel';
+import {modalContext} from '../../context/modalContext';
 
 interface IGallery {
   classes: string
@@ -37,6 +39,7 @@ const Gallery = (props: IGallery) => {
   const [slideIndex,setSlideIndex] = useState(0);
   const [playState, setPlayState] = useState(true);
   const galleryRef = useRef(null);
+  const {modalContextState} = useContext(modalContext);
 
   useEffect(() => {
     clearTimeout(timer);
@@ -47,17 +50,18 @@ const Gallery = (props: IGallery) => {
   }, [slideIndex])
 
   function nextSlide() {
-    
-    const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
-    // update slides and setup default slides after
-    const timerOut = setTimeout(() => {
-      if (galleryRef.current.querySelector('.out')) {
-        galleryRef.current.querySelector('.out').classList.remove('out');
-        clearTimeout(timerOut);
-      }
-    }, 700);
+    if (modalContextState.open) {
+      const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
+      // update slides and setup default slides after
+      const timerOut = setTimeout(() => {
+        if (galleryRef && galleryRef.current.querySelector('.out')) {
+          galleryRef.current.querySelector('.out').classList.remove('out');
+          clearTimeout(timerOut);
+        }
+      }, 700);
 
-    setSlideIndex(newSlideIndex);
+      setSlideIndex(newSlideIndex);
+    }
   }
 
   function getSlides(slide:number) {
