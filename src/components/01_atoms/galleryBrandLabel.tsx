@@ -31,6 +31,9 @@ const StyledSVG = styled.svg`
     fill-rule: evenodd;
     fill-opacity: 0;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const GalleryBrandLabel = (props: IGalleryBrandLabel) => {

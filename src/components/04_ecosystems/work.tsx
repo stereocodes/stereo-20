@@ -13,6 +13,10 @@ const StyledColumn = styled.div`
 
 const StyledWorkSection = styled(Section)`
   padding-top: 200px;
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 150px 20px 40px;
+  }
 `;
 
 const Work = () => {

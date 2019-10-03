@@ -27,6 +27,7 @@ const StyledSlide = styled.div`
   z-index: ${zdepth('lowest')};
   background-image: url(${(p:IStyledSlide) => p.image});
   transition-duration: 0s;
+  @media screen and (max-width: 768px) {width: 100%;}
   &:before{
     content: '';
     position: absolute;

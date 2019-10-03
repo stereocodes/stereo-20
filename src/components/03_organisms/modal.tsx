@@ -62,7 +62,7 @@ const StyledSection = styled(Section)`
   }
   @media screen and (max-width: 768px) {
     display: block;
-    padding: 100px 20px;
+    padding: 120px 20px;
   }
 `;
 
@@ -85,7 +85,7 @@ const Modal = (props:IModal) => {
   console.log(modalContextState.open);
   return (
     <StyledModal open={modalContextState.open}>
-      <ModalNav brand="TWITCH" callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
+      <ModalNav brand={selectedWork().brand} callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
       <StyledSection color="var(--color-SECONDARY)">
         <div>
           <StyledModalHeader label={selectedWork().title} break/>
