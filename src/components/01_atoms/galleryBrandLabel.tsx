@@ -25,7 +25,7 @@ const StyledSVG = styled.svg`
     text-transform: uppercase;
     stroke: var(--color-PRIMARY);
     stroke-width: 2;
-    font-size: 15.0rem;
+    font-size: 13.0rem;
     letter-spacing: 10px;
     fill: none;
     fill-rule: evenodd;

@@ -7,7 +7,20 @@ const workThumbTarot = require('~/static/images/content/work-thumbnail-tarot.jpg
 const workThumbTwitch = require('~/static/images/content/work-thumbnail-twitch.jpg');
 const workThumbStereo = require('~/static/images/content/work-thumbnail-stereo.jpg');
 
+const hqSlide1 = require('~/static/images/content/hq/slide-1.jpg');
+const hqSlide2 = require('~/static/images/content/hq/slide-2.jpg');
+const hqSlide3 = require('~/static/images/content/hq/slide-3.jpg');
+const hqSlide4 = require('~/static/images/content/hq/slide-4.jpg');
 
+const twitchSlide1 = require('~/static/images/content/twitch/slide-1.jpg');
+const twitchSlide2 = require('~/static/images/content/twitch/slide-2.jpg');
+const twitchSlide3 = require('~/static/images/content/twitch/slide-3.jpg');
+const twitchSlide4 = require('~/static/images/content/twitch/slide-4.jpg');
+
+const spotifySlide1 = require('~/static/images/content/spotify/slide-1.jpg');
+const spotifySlide2 = require('~/static/images/content/spotify/slide-2.jpg');
+const spotifySlide3 = require('~/static/images/content/spotify/slide-3.jpg');
+const spotifySlide4 = require('~/static/images/content/spotify/slide-4.jpg');
 
 export const work = [
   [
@@ -18,7 +31,7 @@ export const work = [
       subTitle: "Development / Strategy",
       color: "#272A81",
       image: workThumbHQ,
-      slides: [workThumbStereo,workThumbTwitch,workThumbTarot,workThumbPatagonia],
+      slides: [hqSlide1,hqSlide2,hqSlide3,hqSlide4],
       copy: '<p>HQ Trivia in partnership with Google Actions team to develop custom Google Actions game based around the HQ Trivia brand. Using Dialogflow; A tool built by Google to facilitate training natural language assistants/applications; a custom built API on AWS EC2/Lambda functions. Using these technologies create a unique interactive voice guided gaming experience in the HQ brand. Was sent to IO 2019 where google featured the product on stage during the developer keynote.</p>'
     },
     {
@@ -51,7 +64,7 @@ export const work = [
       subTitle: "Development / Strategy / Design",
       color: "#12662D",
       image: workThumbSpotify,
-      slides: [workThumbBuykea, workThumbApp,workThumbSpotify,workThumbHQ],
+      slides: [spotifySlide1, spotifySlide2,spotifySlide3,spotifySlide4],
       copy: `
         <p>Spotify for brands a LMS for holding companies in partnership with Spotify. An interactive front-end tied to a fully custom backend application powered by a mix of custom GCP / Node / React and Contentful / React. My role on this was to architect from scratch a functional CMS that drives the front-end experience for an interactive learning management system(LMS). I played two parts in the CMS.</p>
         <p>(1) Senior Developer in charge of creating the entire backend service through GCP / Node / React. This included User roles for various levels of administration. CUD for user management at the admin and super admin levels, SSO utilizing Spotify login for user access, Permissions based views, and custom reporting for each holding company including downloadable data via csv/xls.</p>
@@ -72,7 +85,7 @@ export const work = [
       subTitle: "Development / Strategy",
       color: "#54348F",
       image: workThumbTwitch,
-      slides: [workThumbApp,workThumbBuykea,workThumbSpotify,workThumbHQ],
+      slides: [twitchSlide1,twitchSlide2,twitchSlide3,twitchSlide4],
       copy: `
         <p>A large scale multitouch interactive kiosk to educate streamers on the Twitch platform. The kiosk technology consisted of a React/Electron application deployed to work on a windows PC to be interacted with on multiple 60 inch capacitive touch displays. The application being a single piece of software could be separated into three different experiences to educate the streamer along the three main topics of development, launch, and live.</p>
         <p>The displays were showcased at the Game Developers Conference(GDC) in San Francisco in March of this year(2019). As I was the sole developer of the application I was sent to the conference to assist Twitch in any issues and to help in a successful launch of the application to booth displays.</p>

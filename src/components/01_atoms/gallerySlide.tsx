@@ -19,8 +19,9 @@ const StyledSlide = styled.div`
   height: 100%;
   width: 80%;
   opacity: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
   transform: scale(.8) translate3d(0,0,0);
   transition: all .8s;
   z-index: ${zdepth('lowest')};

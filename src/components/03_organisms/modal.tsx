@@ -9,10 +9,6 @@ import {modalContext} from '../../context/modalContext';
 import {work} from '../../store/work';
 import ReactHtmlParser from 'react-html-parser';
 
-const image1 = require('~/static/images/content/work-thumbnail-hq.jpg');
-const image2 = require('~/static/images/content/work-thumbnail-tarot.jpg');
-const image3 = require('~/static/images/content/work-thumbnail-stereo.jpg');
-const image4 = require('~/static/images/content/work-thumbnail-spotify.jpg');
 
 interface IStyledModal {
   open: boolean
