@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, MutableRefObject } from 'react';
 import styled from 'styled-components';
 import Header from '../01_atoms/header';
 
@@ -28,6 +28,7 @@ interface ISection {
   color?: string
   children?: ReactNode
   className?: string
+  ref?: MutableRefObject<any>
 }
 
 const Section = (props: ISection) => {

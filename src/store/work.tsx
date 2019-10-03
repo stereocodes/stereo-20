@@ -96,7 +96,7 @@ export const work = [
       subTitle: "Development / Strategy / Design",
       color: "#9A043B",
       image: workThumbStereo,
-      link:"https://stereo.codes"
+      link:"http://18.stereo.codes"
     }
   ]
 ]

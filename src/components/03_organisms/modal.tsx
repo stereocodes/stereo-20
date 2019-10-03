@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef, useEffect} from 'react';
 import styled from 'styled-components';
 import Header from '../01_atoms/header';
 import Gallery from './gallery';
@@ -76,17 +76,22 @@ interface IModal {
 
 const Modal = (props:IModal) => {
   const {modalContextState, setModalContextState} = useContext(modalContext);
+  const modalRef = useRef(null)
+
+  // useEffect(() => {
+  //   modalRef.current.scrollTop = 0;
+  // }, [])
 
   function selectedWork():any {
     return work
     .filter((item:any) => item.filter((subItem:any) => subItem.workId === modalContextState.id).length)[0]
     .filter((item:any) => item.workId === modalContextState.id)[0];
   }
-  console.log(modalContextState.open);
+  
   return (
     <StyledModal open={modalContextState.open}>
       <ModalNav brand={selectedWork().brand} callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
-      <StyledSection color="var(--color-SECONDARY)">
+      <StyledSection color="var(--color-SECONDARY)" ref={modalRef}>
         <div>
           <StyledModalHeader label={selectedWork().title} break/>
           <div>
