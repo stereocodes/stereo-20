@@ -12,7 +12,7 @@ module.exports = merge(common, {
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/',
-    path: Path.resolve(__dirname, 'dist')
+    path: Path.resolve(__dirname, '../dist')
   },
   optimization: {
     removeAvailableModules: false,
