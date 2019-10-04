@@ -81,13 +81,16 @@ const StyledSlide = styled.div`
 
 const GallerySlide = (props: IGallerySlide) => {
   const slideRef = useRef(null);
-
+  let timer:any = null;
   useEffect(() => {
     
     if (props.slideState === 4) {
-      setTimeout(() => {
+      timer = setTimeout(() => {
         slideRef.current.classList.remove('out');
       }, 1000);
+    }
+    return () => {
+      clearTimeout(timer);
     }
   },[props.slideState]);
 

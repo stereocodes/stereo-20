@@ -40,11 +40,18 @@ const Gallery = (props: IGallery) => {
   const [playState, setPlayState] = useState(true);
   const galleryRef = useRef(null);
   const {modalContextState} = useContext(modalContext);
+  const [gwidth, setGwidth] = useState(0);
+
+
+  useEffect(() => {
+    setGwidth(galleryRef.current.clientWidth);
+    console.log(galleryRef.current.clientWidth);
+  }, [galleryRef])
 
   useEffect(() => {
     clearTimeout(timer);
     timer = setTimeout(nextSlide, 4000);
-    () => {
+    return () => {
       clearInterval(timer);
     }
   }, [slideIndex])
@@ -54,7 +61,7 @@ const Gallery = (props: IGallery) => {
       const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
       // update slides and setup default slides after
       const timerOut = setTimeout(() => {
-        if (galleryRef && galleryRef.current.querySelector('.out')) {
+        if (galleryRef.current && galleryRef.current.querySelector('.out')) {
           galleryRef.current.querySelector('.out').classList.remove('out');
           clearTimeout(timerOut);
         }
@@ -100,7 +107,7 @@ const Gallery = (props: IGallery) => {
 
   return (
     <StyledGallery className={`${props.classes} gallery grid-col-6`} ref={galleryRef} play={playState}>
-      <GalleryBrandLabel label={props.label}/>
+      <GalleryBrandLabel label={props.label} pwidth={gwidth}/>
       { getSlides(slideIndex) }
     </StyledGallery>
   )

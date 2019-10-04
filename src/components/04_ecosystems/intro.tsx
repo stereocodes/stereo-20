@@ -16,7 +16,7 @@ const StyledIntroGraphic = styled.div`
     width: 100%;
   }
   @media screen and (max-width: 768px){
-    grid-column: 3 / span 24;
+    grid-column: 1 / span 28;
   }
 `;
 

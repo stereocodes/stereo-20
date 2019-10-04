@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 interface IGalleryBrandLabel {
   label: string
+  pwidth:number
 }
 
 interface IStyledSVG {
@@ -44,19 +45,23 @@ const GalleryBrandLabel = (props: IGalleryBrandLabel) => {
   const [parentWidth, setParentWidth] = useState(0);
   
   useEffect(() => {
-    getParentWidth();
+    if (props.pwidth > 0) {
+      getParentWidth();
+    }
     resizeListener = window.addEventListener('resize', getParentWidth);
-    () => {
+    return () => {
       window.removeEventListener('resize', resizeListener);
     }
-  }, [props.label])
+  }, [props.pwidth, textRef])
 
   function getParentWidth() {
-    const parentWidth = svgRef.current.parentNode.clientWidth;
-    const textBBox = textRef.current.getBBox();
-    console.log(textBBox);
-    setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y});
-    setParentWidth(parentWidth);
+    const parentWidth = props.pwidth;
+    try {
+      const textBBox = textRef.current.getBBox();
+      setViewBoxRect({w: textBBox.width, h: textBBox.height, x: textBBox.x, y: textBBox.y});
+      setParentWidth(parentWidth);
+    } catch {}
+    
   }
 
   return (

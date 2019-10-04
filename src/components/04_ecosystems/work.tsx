@@ -47,7 +47,6 @@ const Work = () => {
       </StyledColumn>
     ))
   }
-  console.log('wtf');
   return (
     <StyledWorkSection label="Check it.">
       {workContent(work)}

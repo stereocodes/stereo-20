@@ -28,7 +28,6 @@ interface ISection {
   color?: string
   children?: ReactNode
   className?: string
-  ref?: MutableRefObject<any>
 }
 
 const Section = (props: ISection) => {

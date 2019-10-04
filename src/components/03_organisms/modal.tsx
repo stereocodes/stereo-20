@@ -78,9 +78,9 @@ const Modal = (props:IModal) => {
   const {modalContextState, setModalContextState} = useContext(modalContext);
   const modalRef = useRef(null)
 
-  // useEffect(() => {
-  //   modalRef.current.scrollTop = 0;
-  // }, [])
+  useEffect(() => {
+    modalRef.current.scrollTop = 0;
+  }, [])
 
   function selectedWork():any {
     return work
@@ -89,9 +89,9 @@ const Modal = (props:IModal) => {
   }
   
   return (
-    <StyledModal open={modalContextState.open}>
+    <StyledModal open={modalContextState.open} ref={modalRef}>
       <ModalNav brand={selectedWork().brand} callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
-      <StyledSection color="var(--color-SECONDARY)" ref={modalRef}>
+      <StyledSection color="var(--color-SECONDARY)">
         <div>
           <StyledModalHeader label={selectedWork().title} break/>
           <div>
