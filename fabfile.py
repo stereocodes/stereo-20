@@ -3,7 +3,6 @@ from fabric.contrib.project import rsync_project;
 
 env.user = "stereo"
 env.hosts = ["stereo.codes"]
-env.password = "!PHsnort2008"
 
 ignorefiles = (
     ".DS_Store",
