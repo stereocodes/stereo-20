@@ -80,8 +80,17 @@ const Modal = (props:IModal) => {
 
   useEffect(() => {
     modalRef.current.scrollTop = 0;
+    document.addEventListener('keydown', handleKeypress);
+    return () => {
+      document.removeEventListener('keydown', handleKeypress);
+    }
   }, [])
 
+  function handleKeypress(e:any) {
+    if (e.keyCode == 27) {
+      setModalContextState({open: false, id: modalContextState.id})
+    }
+  }
   function selectedWork():any {
     return work
     .filter((item:any) => item.filter((subItem:any) => subItem.workId === modalContextState.id).length)[0]

@@ -45,7 +45,6 @@ const Gallery = (props: IGallery) => {
 
   useEffect(() => {
     setGwidth(galleryRef.current.clientWidth);
-    console.log(galleryRef.current.clientWidth);
   }, [galleryRef])
 
   useEffect(() => {
