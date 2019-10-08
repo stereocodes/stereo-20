@@ -1,7 +1,7 @@
 import React, { ReactNode, MutableRefObject } from 'react';
 import styled from 'styled-components';
 import Header from '../01_atoms/header';
-
+import IntObserverWrap from '../../lib/intersectionObserver';
 
 interface IStyledSection {
   color: string
@@ -32,13 +32,15 @@ interface ISection {
 
 const Section = (props: ISection) => {
   return (
-    <StyledSection color={props.color} className={props.className}>
-      {props.label && <Header 
-        break={props.break} 
-        label={props.label}
-      />}
-      {props.children}
-    </StyledSection>
+    <IntObserverWrap>
+      <StyledSection color={props.color} className={props.className}>
+        {props.label && <Header 
+          break={props.break} 
+          label={props.label}
+        />}
+        {props.children}
+      </StyledSection>
+    </IntObserverWrap>
   )
 }
 
