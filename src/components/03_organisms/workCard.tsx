@@ -7,13 +7,19 @@ interface IStyledWorkCard {
 }
 const StyledWorkCard = styled.div`
   position: relative;
-  padding-top: 60px;
-  background-color: ${(p:IStyledWorkCard) => p.backgroundColor};
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
-  position:relative;
+  
   cursor: pointer;
+  & > div{
+    transition: all .3s;
+    transform: scale(1);
+    background-color: ${(p:IStyledWorkCard) => p.backgroundColor};
+    padding-top: 60px;
+  
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    position:relative;
+  }
   h3{
     font-family: 'glacial', sans-serif;
     text-transform: uppercase;
@@ -36,6 +42,15 @@ const StyledWorkCard = styled.div`
   img{
     display: block;
     width:100%;
+  }
+  @media screen and (min-width: 768px) {
+   
+    &:hover{
+      & > div{
+        transform: scale(.9);
+      }
+    }
+    
   }
 `;
 
@@ -65,9 +80,12 @@ const WorkCard = (props:IWorkCard) => {
       backgroundColor={props.bgColor}
       onClick={(e:any) => openWork(e)}
     >
-      <h3>{props.title}</h3>
-      <h5>{props.subTitle}</h5>
-      <img src={props.bgImage} alt=""/>
+      <div>
+        <h3>{props.title}</h3>
+        <h5>{props.subTitle}</h5>
+        <img src={props.bgImage} alt=""/>
+      </div>
+      
     </StyledWorkCard>
   );
 }
