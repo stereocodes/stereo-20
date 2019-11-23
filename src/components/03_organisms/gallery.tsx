@@ -1,24 +1,24 @@
-import React, { 
-  useEffect, 
-  useState, 
+import React, {
+  useEffect,
+  useState,
   useRef,
   useReducer,
   useContext
-} from 'react';
-import styled from 'styled-components';
-import GallerySlide from '../01_atoms/gallerySlide';
-import GalleryBrandLabel from '../01_atoms/galleryBrandLabel';
-import {modalContext} from '../../context/modalContext';
+} from "react";
+import styled from "styled-components";
+import GallerySlide from "../01_atoms/gallerySlide";
+import GalleryBrandLabel from "../01_atoms/galleryBrandLabel";
+import { modalContext } from "../../context/modalContext";
 
 interface IGallery {
-  classes: string
-  images: string[]
-  play: boolean
-  label: string
+  classes: string;
+  images: string[];
+  play: boolean;
+  label: string;
 }
 
 interface IStyledGallery {
-  play: boolean
+  play: boolean;
 }
 
 const StyledGallery = styled.aside`
@@ -28,40 +28,40 @@ const StyledGallery = styled.aside`
   height: 700px;
   padding: 20px;
   width: 100%;
-  transform: translate3d(0,0,0);
-  opacity: ${(p:IStyledGallery) => p.play ? '1' : '0'};
-  transition: opacity var(--fastanimation) .8s;
-  transition-delay: ${(p:IStyledGallery) => p.play ? '1s' : '0s'};
+  transform: translate3d(0, 0, 0);
+  opacity: ${(p: IStyledGallery) => (p.play ? "1" : "0")};
+  transition: opacity var(--fastanimation) 0.8s;
+  transition-delay: ${(p: IStyledGallery) => (p.play ? "1s" : "0s")};
 `;
 
 const Gallery = (props: IGallery) => {
-  let timer:any = null;
-  const [slideIndex,setSlideIndex] = useState(0);
+  let timer: any = null;
+  const [slideIndex, setSlideIndex] = useState(0);
   const [playState, setPlayState] = useState(true);
   const galleryRef = useRef(null);
-  const {modalContextState} = useContext(modalContext);
+  const { modalContextState } = useContext(modalContext);
   const [gwidth, setGwidth] = useState(0);
-
 
   useEffect(() => {
     setGwidth(galleryRef.current.clientWidth);
-  }, [galleryRef])
+  }, [galleryRef]);
 
   useEffect(() => {
     clearTimeout(timer);
     timer = setTimeout(nextSlide, 4000);
     return () => {
       clearInterval(timer);
-    }
-  }, [slideIndex])
+    };
+  }, [slideIndex]);
 
   function nextSlide() {
     if (modalContextState.open) {
-      const newSlideIndex = slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
+      const newSlideIndex =
+        slideIndex + 1 > props.images.length - 1 ? 0 : slideIndex + 1;
       // update slides and setup default slides after
       const timerOut = setTimeout(() => {
-        if (galleryRef.current && galleryRef.current.querySelector('.out')) {
-          galleryRef.current.querySelector('.out').classList.remove('out');
+        if (galleryRef.current && galleryRef.current.querySelector(".out")) {
+          galleryRef.current.querySelector(".out").classList.remove("out");
           clearTimeout(timerOut);
         }
       }, 700);
@@ -70,13 +70,14 @@ const Gallery = (props: IGallery) => {
     }
   }
 
-  function getSlides(slide:number) {
+  function getSlides(slide: number) {
     const { images } = props;
     const imagesLength = images.length - 1;
 
-    const slideNext = (slide:number) => slide + 1 > imagesLength ? 0 : slide + 1;
+    const slideNext = (slide: number) =>
+      slide + 1 > imagesLength ? 0 : slide + 1;
 
-    const slideLast = (slide:number) => {
+    const slideLast = (slide: number) => {
       if (slide + 2 > imagesLength) {
         if (slide + 2 > images.length) {
           return 1;
@@ -85,43 +86,39 @@ const Gallery = (props: IGallery) => {
       } else {
         return slide + 2;
       }
-    }
+    };
 
     const markup = images.map((item, i) => {
-        if (i === slide) {
-          return (<GallerySlide image={item} slideState={1} key={i}/>);
-        }
-        if (i === slideNext(slide)) {
-          return (<GallerySlide image={item} slideState={2} key={i}/>);
-        }
-        if (i === slideLast(slide)) {
-          return (<GallerySlide image={item} slideState={3} key={i}/>);
-        }
-        return (<GallerySlide image={item} slideState={4} key={i}/>);
+      if (i === slide) {
+        return <GallerySlide image={item} slideState={1} key={i} />;
       }
-    );
+      if (i === slideNext(slide)) {
+        return <GallerySlide image={item} slideState={2} key={i} />;
+      }
+      if (i === slideLast(slide)) {
+        return <GallerySlide image={item} slideState={3} key={i} />;
+      }
+      return <GallerySlide image={item} slideState={4} key={i} />;
+    });
 
     return markup;
   }
 
   return (
-    <StyledGallery className={`${props.classes} gallery grid-col-6`} ref={galleryRef} play={playState}>
-      <GalleryBrandLabel label={props.label} pwidth={gwidth}/>
-      { getSlides(slideIndex) }
+    <StyledGallery
+      className={`${props.classes} gallery grid-col-6`}
+      ref={galleryRef}
+      play={playState}
+    >
+      <GalleryBrandLabel label={props.label} pwidth={gwidth} />
+      {getSlides(slideIndex)}
     </StyledGallery>
-  )
-}
+  );
+};
 
 Gallery.defaultProps = {
-  classes: '',
-  play: true,
-}
+  classes: "",
+  play: true
+};
 
 export default Gallery;
-
-
-
-
-
-
-

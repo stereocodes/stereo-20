@@ -14,7 +14,7 @@
     "serve": "webpack-dev-server --config webpack/webpack.config.dev.js --watch",
     "start:react": "webpack --config webpack/webpack.config.dev.js --watch",
     "start:docz": "yarn docz dev",
-    "test": "jest",
+    "test": "jest && prettier --check 'src/components/**/*.tsx'",
     "test:watch": "jest --watch --verbose -e --coverage"
   },
   "repository": {

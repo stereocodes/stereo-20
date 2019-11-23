@@ -1,21 +1,20 @@
-import React, {useContext, useRef, useEffect} from 'react';
-import styled from 'styled-components';
-import Header from '../01_atoms/header';
-import Gallery from './gallery';
-import Section from './section';
-import ModalNav from '../02_molecules/modalNav';
-import { string } from 'prop-types';
-import {modalContext} from '../../context/modalContext';
-import {work} from '../../store/work';
-import ReactHtmlParser from 'react-html-parser';
-
+import React, { useContext, useRef, useEffect } from "react";
+import styled from "styled-components";
+import Header from "../01_atoms/header";
+import Gallery from "./gallery";
+import Section from "./section";
+import ModalNav from "../02_molecules/modalNav";
+import { string } from "prop-types";
+import { modalContext } from "../../context/modalContext";
+import { work } from "../../store/work";
+import ReactHtmlParser from "react-html-parser";
 
 interface IStyledModal {
-  open: boolean
+  open: boolean;
 }
 
 const StyledModal = styled.div`
-  position:fixed;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -24,40 +23,40 @@ const StyledModal = styled.div`
   z-index: 1;
   color: var(--color-PRIMARY);
   overflow-y: auto;
-  opacity: ${(p:IStyledModal) => p.open ? '1' : '0'};
-  pointer-events: ${(p:IStyledModal) => p.open ? 'auto' : 'none'};
-  transition: all .5s;
-  p{
-    font-family: 'nunito', sans-serif;
+  opacity: ${(p: IStyledModal) => (p.open ? "1" : "0")};
+  pointer-events: ${(p: IStyledModal) => (p.open ? "auto" : "none")};
+  transition: all 0.5s;
+  p {
+    font-family: "nunito", sans-serif;
     font-size: 1.6rem;
     letter-spacing: 0.16px;
     line-height: 40px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
   }
 `;
 
 const StyledModalHeader = styled(Header)`
-  font-size: 8.0rem;
+  font-size: 8rem;
   text-align: left;
   line-height: 80px;
-  margin-bottom:70px;
-  span{
+  margin-bottom: 70px;
+  span {
     text-align: left;
   }
   @media screen and (max-width: 768px) {
-    font-size: 5.0rem;
+    font-size: 5rem;
     line-height: 50px;
   }
 `;
 
 const StyledSection = styled(Section)`
   padding-top: 120px;
-  padding-bottom:80px;
+  padding-bottom: 80px;
   align-items: center;
-  div:first-child{
+  div:first-child {
     grid-column: 4 / span 10;
   }
-  div:last-child{
+  div:last-child {
     grid-column: 18 / span 10;
   }
   @media screen and (max-width: 768px) {
@@ -66,68 +65,72 @@ const StyledSection = styled(Section)`
   }
 `;
 
-
 interface IModal {
-  images: string[]
-  copy: string
-  title: string
-  brand: string
+  images: string[];
+  copy: string;
+  title: string;
+  brand: string;
 }
 
-const Modal = (props:IModal) => {
-  const {modalContextState, setModalContextState} = useContext(modalContext);
-  const modalRef = useRef(null)
+const Modal = (props: IModal) => {
+  const { modalContextState, setModalContextState } = useContext(modalContext);
+  const modalRef = useRef(null);
 
   useEffect(() => {
     modalRef.current.scrollTop = 0;
-    document.addEventListener('keydown', handleKeypress);
+    document.addEventListener("keydown", handleKeypress);
     return () => {
-      document.removeEventListener('keydown', handleKeypress);
-    }
-  }, [])
+      document.removeEventListener("keydown", handleKeypress);
+    };
+  }, []);
 
-  function handleKeypress(e:any) {
+  function handleKeypress(e: any) {
     if (e.keyCode == 27) {
-      setModalContextState({open: false, id: modalContextState.id})
+      setModalContextState({ open: false, id: modalContextState.id });
     }
   }
-  function selectedWork():any {
+  function selectedWork(): any {
     return work
-    .filter((item:any) => item.filter((subItem:any) => subItem.workId === modalContextState.id).length)[0]
-    .filter((item:any) => item.workId === modalContextState.id)[0];
+      .filter(
+        (item: any) =>
+          item.filter((subItem: any) => subItem.workId === modalContextState.id)
+            .length
+      )[0]
+      .filter((item: any) => item.workId === modalContextState.id)[0];
   }
-  
+
   return (
     <StyledModal open={modalContextState.open} ref={modalRef}>
-      <ModalNav brand={selectedWork().brand} callback={() => setModalContextState({open: false, id: modalContextState.id})}/>
+      <ModalNav
+        brand={selectedWork().brand}
+        callback={() =>
+          setModalContextState({ open: false, id: modalContextState.id })
+        }
+      />
       <StyledSection color="var(--color-SECONDARY)">
         <div>
-          <StyledModalHeader label={selectedWork().title} break/>
-          <div>
-            {ReactHtmlParser(selectedWork().copy)}
-          </div>
+          <StyledModalHeader label={selectedWork().title} break />
+          <div>{ReactHtmlParser(selectedWork().copy)}</div>
         </div>
         <div>
-          {
-            modalContextState.open && 
+          {modalContextState.open && (
             <Gallery
               label={selectedWork().brand}
               play={true}
               images={selectedWork().slides}
             />
-          }
-          
+          )}
         </div>
       </StyledSection>
     </StyledModal>
-  )
-}
+  );
+};
 
 Modal.defaultProps = {
   images: [],
   copy: string,
   title: string,
-  brand: string 
-}
+  brand: string
+};
 
 export default Modal;

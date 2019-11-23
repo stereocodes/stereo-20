@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Section from '../03_organisms/section';
-import Logo from '../01_atoms/logo';
-const keyhole = require('~/static/images/svg/keyhole.svg');
+import React from "react";
+import styled from "styled-components";
+import Section from "../03_organisms/section";
+import Logo from "../01_atoms/logo";
+const keyhole = require("~/static/images/svg/keyhole.svg");
 
 const StyledIntro = styled.div`
   padding: 100px 20px 100px;
@@ -11,11 +11,11 @@ const StyledIntro = styled.div`
 const StyledIntroGraphic = styled.div`
   grid-column: 9 / span 12;
   padding: 0 30px;
-  img{
+  img {
     display: block;
     width: 100%;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     grid-column: 1 / span 28;
   }
 `;
@@ -23,11 +23,11 @@ const StyledIntroGraphic = styled.div`
 const StyledLogo = styled(Logo)`
   max-width: 170px;
   margin: 0 auto 20px;
-  img{
-    display:block;
+  img {
+    display: block;
     width: 100%;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     max-width: 100px;
   }
 `;
@@ -42,11 +42,11 @@ const Intro = () => {
       <StyledLogo />
       <StyledIntroSection label="Design Development Strategy" break>
         <StyledIntroGraphic>
-          <img src={keyhole} alt=""/>
+          <img src={keyhole} alt="" />
         </StyledIntroGraphic>
       </StyledIntroSection>
     </StyledIntro>
-  )
-}
+  );
+};
 
 export default Intro;

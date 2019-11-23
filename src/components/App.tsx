@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
-import Intro from './04_ecosystems/intro';
-import About from './04_ecosystems/about';
-import Capabilites from './04_ecosystems/capabilities';
-import Work from './04_ecosystems/work';
-import styled, {createGlobalStyle} from 'styled-components';
-import '../static/fonts/fonts.css';
-import Modal from './03_organisms/modal';
-import ModalContextProvider, {modalContext} from '../context/modalContext';
+import React, { useContext } from "react";
+import Intro from "./04_ecosystems/intro";
+import About from "./04_ecosystems/about";
+import Capabilites from "./04_ecosystems/capabilities";
+import Work from "./04_ecosystems/work";
+import styled, { createGlobalStyle } from "styled-components";
+import "../static/fonts/fonts.css";
+import Modal from "./03_organisms/modal";
+import ModalContextProvider, { modalContext } from "../context/modalContext";
 
 const CSSGlobals = createGlobalStyle`
   :root{
@@ -45,14 +45,14 @@ const CSSGlobals = createGlobalStyle`
 `;
 
 interface IStyledMain {
-  modalOpen: boolean
+  modalOpen: boolean;
 }
 const StyledMain = styled.section`
-  pointer-events: ${(p:IStyledMain) => p.modalOpen ? 'none' : 'auto'};
+  pointer-events: ${(p: IStyledMain) => (p.modalOpen ? "none" : "auto")};
 `;
 
 const App = () => {
-  const {modalContextState} = useContext(modalContext)
+  const { modalContextState } = useContext(modalContext);
   return (
     <ModalContextProvider>
       <StyledMain modalOpen={modalContextState.open}>
@@ -63,9 +63,8 @@ const App = () => {
         <Work />
       </StyledMain>
       <Modal />
-
     </ModalContextProvider>
-  )
-}
+  );
+};
 
 export default App;

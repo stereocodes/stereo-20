@@ -1,12 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const exitIcon = require('~/static/images/svg/icon-exit.svg');
-
+const exitIcon = require("~/static/images/svg/icon-exit.svg");
 
 interface IModalNav {
-  brand: string
-  callback: () => void
+  brand: string;
+  callback: () => void;
 }
 
 const StyledNav = styled.nav`
@@ -20,21 +19,25 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 1000px) {
     background: var(--color-SECONDARY);
   }
-  & > div{
+  & > div {
     display: grid;
     grid-template-columns: repeat(28, 1fr);
     grid-auto-flow: dense;
     align-items: center;
-    h3{
+    h3 {
       grid-column: 2 / span 10;
       @media screen and (min-width: 768px) {
         display: none;
       }
     }
-    a{
+    a {
       grid-column: 27;
       align-self: end;
-      img{display: block; width: 100%; max-width: 100px;}
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100px;
+      }
       @media screen and (max-width: 1000px) {
         grid-column: 26 / span 2;
       }
@@ -45,22 +48,21 @@ const StyledNav = styled.nav`
   }
 `;
 
-const ModalNav = (props:IModalNav) => {
-  function handleClick(e:any){
-    props.callback()
+const ModalNav = (props: IModalNav) => {
+  function handleClick(e: any) {
+    props.callback();
     e.preventDefault();
   }
   return (
     <StyledNav>
       <div>
         <h3>{props.brand}</h3>
-        <a href="#" onClick={(e) => handleClick(e)}>
-          <img src={exitIcon} alt=""/>
+        <a href="#" onClick={e => handleClick(e)}>
+          <img src={exitIcon} alt="" />
         </a>
       </div>
     </StyledNav>
-  )
-}
-
+  );
+};
 
 export default ModalNav;
